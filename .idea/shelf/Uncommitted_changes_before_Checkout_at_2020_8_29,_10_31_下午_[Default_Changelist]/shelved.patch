@@ -1,0 +1,10 @@
+Index: docs/leetcode.md
+===================================================================
+--- docs/leetcode.md	(revision 444a5492e436ac188fed3addf4065a05598e8b4b)
++++ docs/leetcode.md	(revision 444a5492e436ac188fed3addf4065a05598e8b4b)
+@@ -1,5 +0,0 @@
+-# leetcode
+-```javascript
+-const a = 'b'
+-const b = 'A'
+-```

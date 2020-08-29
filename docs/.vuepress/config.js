@@ -1,9 +1,11 @@
 module.exports = {
+  title: 'Explosion Units',
   markdown: {
     lineNumbers: true
   },
   themeConfig:{
     nav:[
+      { text:'Home', link:'/'}
     ],
     sidebar:{
       '/Vue/':[

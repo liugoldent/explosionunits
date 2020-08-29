@@ -1,12 +1,10 @@
 ---
 home: true
-heroImage: /hero.png
-heroText: Hero Title
-tagline: Hero subtitle
-actionText: Get Started →
-actionLink: /Vue/
+heroText: About Units
+tagline: 
 features:
 
-footer: MIT Licensed | Copyright © 2018-present Evan You
+footer: Copyright © 2020 Guan-Ting Liu
 ---
+<Home />
 
