@@ -1,3 +1,1 @@
-# Vue
-
-## Let's talk About Vue
+# Let's talk About Vue

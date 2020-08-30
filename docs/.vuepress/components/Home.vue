@@ -1,6 +1,7 @@
 <template>
   <div class="DisplayStyle">
     <div class="circle" id="Green"><a href="https://explosionunis.netlify.app/Vue/">Vue</a></div>
+    <div class="circle" id="Blue"><a href="">CSS</a></div>
     <div class="circle" id="Black"><a href="">LeetCode</a></div>
   </div>
 </template>
@@ -14,6 +15,7 @@
   justify-content: center;
 }
 a {
+  color: white;
 }
 .circle{
   --font-size:200px;
@@ -29,10 +31,13 @@ a {
   font-family: 'Montserrat', sans-serif;
 }
 #Green {
-  background-color: aquamarine;
+  background-color: lightgreen;
 }
 #Black {
-  color: white;
   background-color: black;
+}
+
+#Blue {
+  background-color: cornflowerblue;
 }
 </style>

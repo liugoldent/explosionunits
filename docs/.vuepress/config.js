@@ -5,12 +5,24 @@ module.exports = {
   },
   themeConfig:{
     nav:[
-      { text:'Home', link:'/'}
+      { text:'Vue', link:'/Vue/'},
+      { text:'CSS', link:'/CSS/'},
+      { text:'LeetCode', link:'/LeetCode/'}
     ],
     sidebar:{
       '/Vue/':[
         '',
         'vue-router-base',
+        'life-circle'
+      ],
+      '/LeetCode/':[
+        '',
+        'two-sum',
+        'add-two-numbers'
+      ],
+      '/CSS/':[
+        '',
+        'flex'
       ]
     },
     themeConfig: {
