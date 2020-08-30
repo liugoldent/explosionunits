@@ -1,8 +1,8 @@
 <template>
   <div class="DisplayStyle">
     <div class="circle" id="Green"><a href="https://explosionunis.netlify.app/Vue/">Vue</a></div>
-    <div class="circle" id="Blue"><a href="">CSS</a></div>
-    <div class="circle" id="Black"><a href="">LeetCode</a></div>
+    <div class="circle" id="Blue"><a href="https://explosionunis.netlify.app/CSS/">CSS</a></div>
+    <div class="circle" id="Black"><a href="https://explosionunis.netlify.app/LeetCode/">LeetCode</a></div>
   </div>
 </template>
 
