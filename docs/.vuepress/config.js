@@ -1,5 +1,13 @@
 module.exports = {
   title: 'Explosion Units',
+  plugins: [
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'UA-145633929-2'
+      }
+    ]
+  ],
   markdown: {
     lineNumbers: true
   },
