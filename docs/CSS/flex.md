@@ -150,9 +150,36 @@ ps.預設原本都是0，然後不可以有小數點
 ### ***for 內元素***
 ### for RWD 更方便
 主要由三個屬性組合而成
-1. flex-grow：數字，無單位，當子元素flex-basis***小***於自己在父元素娑分配到的長度，則會依照數字做**伸展**
-2. flex-shrink：數字，無單位，當子元素flex-basis***大***於自己在父元素娑分配到的長度，則會依照數字做**壓縮**
-3. flex-basis：子元素的基本大小
+1. flex-grow：數字，無單位，當子元素flex-basis **小**於自己在父元素所分配到的長度，則會依照數字做伸展
+    * 剩下的空間切x份（看flex-grow：總共幾份），分配給子元素
+    * 例如下面總共三份
+```css
+.item {
+    item-grow:1
+}
+.item {
+    item-grow:1
+}
+.item {
+    item-grow:1
+}
+```
+2. flex-shrink：數字，無單位，當子元素flex-basis **大**於自己在父元素所分配到的長度，則會依照數字做壓縮
+* 收縮比：
+    * 總比值：各個子項目寬度x收縮值，並加總所有子項目計算結果
+    * 超出值：
+    * 扣除值：
+    * （子項目寬x收縮比/總比值）x 超出值 = 扣除值
+```css
+.item {
+    flex-shrink: 0; //不壓縮
+}
+
+.item1 {
+    flex-shrink: 1 ; //基本壓縮數值
+}
+```
+3. flex-basis：子元素的基本大小（控制子元素的主軸長度）
 ```html
 <div class="flexOuter">
     <div class="item1"></div>
@@ -160,11 +187,11 @@ ps.預設原本都是0，然後不可以有小數點
 ```
 ```css
 .item1 {
-    flex:1 2 200px;
+    flex:1 2 200px; // 可以一次設定三個
 }
 ```
 
-## 記
+## 註記
 1. align系列：for交錯軸
 2. not align：for 主軸
 

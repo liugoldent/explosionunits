@@ -7,7 +7,8 @@ module.exports = {
     nav:[
       { text:'Vue', link:'/Vue/'},
       { text:'CSS', link:'/CSS/'},
-      { text:'LeetCode', link:'/LeetCode/'}
+      { text:'LeetCode', link:'/LeetCode/'},
+      { text:'React', link:'/React/'},
     ],
     sidebar:{
       '/Vue/':[
@@ -23,6 +24,10 @@ module.exports = {
       '/CSS/':[
         '',
         'flex'
+      ],
+      '/React/':[
+        '',
+        'Lesson1'
       ]
     },
     themeConfig: {
