@@ -3,7 +3,7 @@
     <div class="circle" id="Green"><a href="https://explosionunis.netlify.app/Vue/">Vue</a></div>
     <div class="circle" id="Blue"><a href="https://explosionunis.netlify.app/CSS/">CSS</a></div>
     <div class="circle" id="Black"><a href="https://explosionunis.netlify.app/LeetCode/">LeetCode</a></div>
-    <div class="circle" id="Orange"><a href="https://explosionunis.netlify.app/LeetCode/">React</a></div>
+    <div class="circle" id="Orange"><a href="https://explosionunis.netlify.app/React/">React</a></div>
   </div>
 </template>
 
