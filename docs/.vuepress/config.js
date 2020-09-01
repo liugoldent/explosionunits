@@ -22,7 +22,8 @@ module.exports = {
       '/Vue/':[
         '',
         'vue-router-base',
-        'life-circle'
+        'life-circle',
+        'computed-watch'
       ],
       '/LeetCode/':[
         '',
