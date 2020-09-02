@@ -36,7 +36,8 @@ module.exports = {
       ],
       '/React/':[
         '',
-        'Lesson1'
+        'introduceJSX',
+        'composeComp'
       ]
     },
     themeConfig: {

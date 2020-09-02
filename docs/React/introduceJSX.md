@@ -1,4 +1,4 @@
-# Lesson1 for React
+# Introduce JSX
 
 ## Create a Simple JSX Element
 ### 創建一個簡單的JSX元素
