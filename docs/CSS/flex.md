@@ -1,10 +1,17 @@
-# CSS Flex 
+# Flex 
 
 ## 優點
 #### 彈性排版
 #### 隨意控制方向
 #### 對齊簡單
 #### 自動算尺寸
+
+## 參考網址
+#### [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+#### [玩轉CSS Flex](https://www.youtube.com/watch?v=_nCBQ6AIzDU)
+#### [深入解析CSS Flexbox](https://www.oxxostudio.tw/articles/201501/css-flexbox.html)
+#### [Flex Froggy](https://flexboxfroggy.com/)
+
 
 ## 概念
 ![Flex](https://dotblogsfile.blob.core.windows.net/user/%E5%91%A8%E6%94%BF%E8%BC%9D/ca2fae2c-d1d1-443b-83a1-eb793a30581c/1525241598_89066.png)
@@ -195,5 +202,3 @@ ps.預設原本都是0，然後不可以有小數點
 1. align系列：for交錯軸
 2. not align：for 主軸
 
-## 參考資料
-[深入解析CSS Flexbox](https://www.oxxostudio.tw/articles/201501/css-flexbox.html)

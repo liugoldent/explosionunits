@@ -23,25 +23,31 @@ module.exports = {
         '',
         'vue-router-base',
         'life-circle',
-        'computed-watch'
+        'computed-watch',
+        // 'slot'
       ],
       '/LeetCode/':[
         '',
         'two-sum',
-        'add-two-numbers'
+        'add-two-numbers',
+        'longest-palindromic-substring'
       ],
       '/CSS/':[
         '',
-        'flex'
+        'flex',
+        'grid'
       ],
       '/React/':[
         '',
         'introduceJSX',
-        'composeComp'
+        'composeComp',
+        'props-for-react'
       ]
     },
     themeConfig: {
       lastUpdated: 'Last Updated', // string | boolean
-    }
+      smoothScroll: true,
+      logo:'~/docs/.vuepress/public/logo.png'
+    },
   }
 }
