@@ -24,25 +24,27 @@ module.exports = {
         'vue-router-base',
         'life-circle',
         'computed-watch',
-        // 'slot'
+        'slot'
       ],
       '/LeetCode/':[
         '',
         'leetcode0001-two-sum',
         'leetcode0002-add-two-numbers',
         'leetcode0005-longest-palindromic-substring',
+        'leetcode0006-zigzag-conversion',
         'leetcode0509-feibonacci-number'
       ],
       '/CSS/':[
         '',
         'flex',
-        'grid'
+        'grid',
+        'specificity'
       ],
       '/React/':[
         '',
         'react1-introduceJSX',
         'react2-composeComp',
-        'react3-props-for-react'
+        'react3-stateful-component'
       ]
     },
     themeConfig: {
