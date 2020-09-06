@@ -66,3 +66,33 @@ class ResetPassword extends React.Component {
 };
 
 ```
+
+## Review Using Props with Stateless Functional Components
+### 在這邊我們複習一下用functional Component 傳入props的寫法
+```jsx
+class CampSite extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <Camper  />
+      </div>
+    );
+  }
+};
+const Camper = (props) =>{
+  return (
+    <p>{ props.name }</p>
+  )
+}
+
+Camper.defaultProps = {
+  name: 'CamperBot'
+}
+
+Camper.propTypes = {
+  name: PropTypes.string.isRequired
+}
+```

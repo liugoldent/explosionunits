@@ -56,6 +56,7 @@
 ```css
 .子層A{
     grid-area: B1;
+    /* 或是 grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>; */
     /* 設定完後，再去父層設定就好 */
 }
 .container {

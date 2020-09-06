@@ -66,6 +66,23 @@ or
 }
 ```
 
+## flex-flow
+### ***for 外元素***
+為flex-direction+ flex-wrap的合體
+```css
+#pond {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/* 相等於 */
+#pond {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+```
+
 ## justify-content
 ### ***for 外元素***
 ### 資料流對齊（主軸）

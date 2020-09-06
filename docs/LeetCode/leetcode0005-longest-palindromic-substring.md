@@ -69,3 +69,6 @@ var longestPalindrome = function(s) {
   return s.substring(mi,mj+1);
 };
 ```
+
+## 參考資料
+[LeetCode—Longest Palindromic Substring —javascript實現](https://www.itread01.com/content/1544885770.html)

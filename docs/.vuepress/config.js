@@ -28,9 +28,10 @@ module.exports = {
       ],
       '/LeetCode/':[
         '',
-        'two-sum',
-        'add-two-numbers',
-        'longest-palindromic-substring'
+        'leetcode0001-two-sum',
+        'leetcode0002-add-two-numbers',
+        'leetcode0005-longest-palindromic-substring',
+        'leetcode0509-feibonacci-number'
       ],
       '/CSS/':[
         '',
@@ -39,9 +40,9 @@ module.exports = {
       ],
       '/React/':[
         '',
-        'introduceJSX',
-        'composeComp',
-        'props-for-react'
+        'react1-introduceJSX',
+        'react2-composeComp',
+        'react3-props-for-react'
       ]
     },
     themeConfig: {
