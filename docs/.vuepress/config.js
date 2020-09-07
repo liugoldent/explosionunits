@@ -38,13 +38,15 @@ module.exports = {
         '',
         'flex',
         'grid',
-        'specificity'
+        'specificity',
+        'box-model'
       ],
       '/React/':[
         '',
         'react1-introduceJSX',
         'react2-composeComp',
-        'react3-stateful-component'
+        'react3-stateful-component',
+        'react4-pass-state-to-component'
       ]
     },
     themeConfig: {
