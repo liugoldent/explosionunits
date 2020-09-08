@@ -5,6 +5,7 @@
     <div class="circle" id="Blue"><router-link to="/CSS">CSS</router-link></div>
     <div class="circle" id="Black"><router-link to="/LeetCode">LeetCode</router-link></div>
     <div class="circle" id="Orange"><router-link to="/React">React</router-link></div>
+    <div class="circle" id="Red"><router-link to="/NodeAndNpm">NPM</router-link></div>
   </div>
 </template>
 
@@ -45,5 +46,9 @@ a {
 
 #Orange {
   background-color: #DAA588;
+}
+
+#Red {
+  background-color: #FF5151;
 }
 </style>

@@ -47,6 +47,10 @@ module.exports = {
         'react2-composeComp',
         'react3-stateful-component',
         'react4-pass-state-to-component'
+      ],
+      '/NodeAndNpm/':[
+        '',
+        'talk-about-npm'
       ]
     },
     themeConfig: {
