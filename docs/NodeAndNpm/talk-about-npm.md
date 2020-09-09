@@ -73,3 +73,89 @@ package.json是管理npm的核心，它存了這個專案的所有資料（滿�
 	"version": "1.2.0",
 }
 ```
+## Expand Your Project with External Packages from npm
+再來我們增加套件在我們的`package.json`中
+```json
+{
+    "author": "GuanTing",
+	"name": "fcc-learn-npm-package-json",
+	"description": "freeCodeCamp test",
+	"keywords": ["practice","freecodecamp","npm"],
+	"license": "MIT",
+	"version": "1.2.0",
+	"dependencies": {
+		"moment": "2.14.0",
+		"express": "^4.14.0"
+	},
+}
+```
+
+## Manage npm Dependencies By Understanding Semantic Versioning
+管理我們的版本號！（Semantic Versioning 軟體版本號）
+```"package": "MAJOR.MINOR.PATCH"```
+[軟體版本號](https://zh.wikipedia.org/wiki/%E8%BB%9F%E4%BB%B6%E7%89%88%E6%9C%AC%E8%99%9F)
+```json
+{
+    "author": "GuanTing",
+	"name": "fcc-learn-npm-package-json",
+	"description": "freeCodeCamp test",
+	"keywords": ["practice","freecodecamp","npm"],
+	"license": "MIT",
+	"version": "1.2.0",
+	"dependencies": {
+		"moment": "2.10.2",
+		"express": "^4.14.0"
+	},
+	"package": "2.0.2",
+}
+```
+
+## Use the Tilde-Character to Always Use the Latest Patch Version of a Dependency
+如果你想要永遠保持你的相依在最新狀態，那麼就要使用「~」符號，來讓你的套件一直維持最新的狀態
+```json
+{
+	"author": "GuanTing",
+	"name": "fcc-learn-npm-package-json",
+	"description": "freeCodeCamp test",
+	"keywords": ["practice","freecodecamp","npm"],
+	"license": "MIT",
+	"version": "1.2.0",
+	"dependencies": {
+		"moment": "~2.10.2",
+		"express": "^4.14.0"
+	},
+}
+```
+
+## Use the Caret-Character to Use the Latest Minor Version of a Dependency
+永遠讓你的相依套件，維持在Minor Version（注意下方範例是使用`^2.x.x`）（for小更新）
+```json
+{
+    "author": "GuanTing",
+  	"name": "fcc-learn-npm-package-json",
+  	"description": "freeCodeCamp test",
+  	"keywords": ["practice","freecodecamp","npm"],
+  	"license": "MIT",
+  	"version": "1.2.0",
+  	"dependencies": {
+  		"moment": "^2.x.x",
+  		"express": "^4.14.0"
+  	},
+}
+```
+
+## Remove a Package from Your Dependencies
+要移除套件也很簡單，直接delete掉就好
+```json
+{
+    "author": "GuanTing",
+	"name": "fcc-learn-npm-package-json",
+	"description": "freeCodeCamp test",
+	"keywords": ["practice","freecodecamp","npm"],
+	"license": "MIT",
+	"version": "1.2.0",
+	"dependencies": {
+		"express": "^4.14.0"
+	},
+}
+```

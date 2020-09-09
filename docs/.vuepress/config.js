@@ -51,6 +51,10 @@ module.exports = {
       '/NodeAndNpm/':[
         '',
         'talk-about-npm'
+      ],
+      '/Web/':[
+        '',
+        'request'
       ]
     },
     themeConfig: {
