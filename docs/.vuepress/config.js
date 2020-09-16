@@ -50,7 +50,8 @@ module.exports = {
       ],
       '/NodeAndNpm/':[
         '',
-        'talk-about-npm'
+        'node1-talk-about-npm',
+        'node2-node-and-express'
       ],
       '/Web/':[
         '',

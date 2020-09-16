@@ -1,0 +1,14 @@
+# Basic Node and Express
+
+## Meet the node console
+### 首先我們先在myApp.js中，設定一個console.log
+```javascript
+var express = require('express');
+var app = express();
+
+/** 1) Meet the node console. */
+console.log('Hello World')
+
+module.exports = app;
+
+```
