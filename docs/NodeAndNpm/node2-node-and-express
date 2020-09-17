@@ -12,3 +12,49 @@ console.log('Hello World')
 module.exports = app;
 
 ```
+## Start a Working Express Server
+### 在這邊,我們試著打出req,接收res
+```javascript
+var express = require('express');
+var app = express();
+
+/** 2) A first working Express Server */
+// 這邊的app.xxx,是HTTP的Method
+app.get("/", function(req, res) {
+// 取得回應,則response回應給client端
+    res.send('Hello Express');
+ });
+ // 監聽3001 port,console.log主要印在server端
+app.listen(3001, function() {
+    console.log('Listening on port 3000');
+});
+
+module.exports = app;
+```
+
+## Serve an HTML File
+### 在這篇我們將會了解如何去發送一個request 並render一個index.html
+#### __dirname 為node的global變數,它是用來計算node的路徑的方式
+```javascript
+var express = require('express');
+var app = express();
+/** 3) Serve an HTML file */
+// 同樣地,我們監聽'/'這個port號
+app.get('/',function(req,res){
+    // response時,這次變成sendFile,index.html
+    // __dirname 是你這台電腦的絕對路徑
+    res.sendFile(__dirname+'/views/index.html')
+})
+module.exports = app;
+```
+
+## Serve Static Assets
+### 從serve渲染出一些靜態資源(style/scripts/images)
+1. 在這邊我們主要使用app.use來得到靜態資源
+2. sendFile & static 的參數相同,都是接上絕對路徑
+```javascript
+/** 4) Serve static assets  */
+
+app.use(express.static(__dirname +  '/public'))
+
+```
