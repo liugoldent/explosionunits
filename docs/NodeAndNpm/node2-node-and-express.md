@@ -58,3 +58,48 @@ module.exports = app;
 app.use(express.static(__dirname +  '/public'))
 
 ```
+
+## Serve JSON on a Specific Route
+### 再來我們開始建造一個簡單的API
+```javascript
+/** 5) serve JSON on a specific route */
+// 這邊一樣，在get後接上網址，然後res.json回應成功訊息(json)回去
+// get方法主要是獲取資料
+app.get('/json',function(req,res){
+    res.json({"message": "Hello json"})
+})
+```
+
+## Use the .env File
+### 這個.env主要是存取機敏資料（例如帳號密碼）
+#### 1. 為了方便了解，在這個部分`node.js`均採用全大寫機制
+#### 2. 首先需要安裝`dotenv`這個套件
+#### 3. 再來新增一個.env file（在你的目錄底下，跟myapp.js同一層）
+```
+// .env file
+MESSAGE_STYLE=uppercase
+```
+```javascript
+/** 6) Use the .env file to configure the app */
+app.get('/json',function(req,res){
+ if(process.env.MESSAGE_STYLE === 'uppercase'){
+  res.json({"message": "HELLO JSON"})
+ }else{
+  res.json({"message": "Hello json"})
+ }
+})
+```
+
+## Implement a Root-Level Request Logger Middleware
+### 在post之前，增加一個middleware（守衛的概念）
+#### 1. 主要使用app.use
+#### 2. 然後在callback中的function有三個參數
+#### 3. 其中第三個為`next`，因為任一個請求，會先跑到這邊，然後我們必須讓執行緒往下跑，所以要加一個next
+```javascript
+// --> 7)  Mount the Logger middleware here
+app.use(function(req, res, next){
+    // 這邊的req.method會顯現你的http method。path：會顯示請求的路徑。最後是請求的ip
+    console.log(req.method + " " + req.path + " - " + req.ip)
+    next()
+})
+```
