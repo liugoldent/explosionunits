@@ -32,7 +32,9 @@ module.exports = {
         'leetcode0002-add-two-numbers',
         'leetcode0005-longest-palindromic-substring',
         'leetcode0006-zigzag-conversion',
-        'leetcode0509-feibonacci-number'
+        'leetcode0217-contains-duplicate',
+        'leetcode0509-feibonacci-number',
+        'leetcode0804-unique-morse-code-words'
       ],
       '/CSS/':[
         '',
