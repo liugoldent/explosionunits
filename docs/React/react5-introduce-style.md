@@ -1,11 +1,11 @@
 # Introduce react inline style
 
 ## Introducing Inline Styles
-在這邊要述說如何在react的render tag內加入`style`，基本上是使用
-1. `<div style="color: yellow; font-size: 16px">Mellow Yellow</div>`
-2. `<div style={{color: "yellow", fontSize: 16}}>Mellow Yellow</div>`
-注意到第二點的fontSize寫法，在物件中React不接受「-」的寫法
+### 在這邊要述說如何在react的render tag內加入`style`
 ```jsx
+// 第一種寫法： style="color: yellow; font-size: 16px"
+// 第一種寫法： style={{color: "yellow", fontSize: 16}}
+// 注意到第二點的fontSize寫法，在物件中React不接受「-」的寫法
 class Colorful extends React.Component {
   render() {
     return (
