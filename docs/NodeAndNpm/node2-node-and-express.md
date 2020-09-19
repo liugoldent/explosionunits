@@ -75,6 +75,10 @@ app.get('/json',function(req,res){
 #### 1. 為了方便了解，在這個部分`node.js`均採用全大寫機制
 #### 2. 首先需要安裝`dotenv`這個套件
 #### 3. 再來新增一個.env file（在你的目錄底下，跟myapp.js同一層）
+:::tip
+要使用process之前，要加入`require('dotenv').config()`
+才可以使用process
+:::
 ```
 // .env file
 MESSAGE_STYLE=uppercase
@@ -103,3 +107,79 @@ app.use(function(req, res, next){
     next()
 })
 ```
+
+## Chain Middleware to Create a Time Server
+### 鏈結起middleware & 創造一個time server
+```javascript
+/** 8) Chaining middleware. A Time server */
+    // 同樣地，我們也給一個/now，來創造一個請求
+   app.get('/now', function(req,res,next){
+    req.time = new Date().toString()
+    next()
+    // 在next後，繼續執行下面的function
+   }, function(req,res){
+    // 這個繼續執行的function所要做的事情為：
+    res.send({"time": req.time})
+   })
+``` 
+## Get Route Parameter Input from the Client
+### 得到使用者輸入的router的參數
+```javascript
+// 使用狀況：有時候，我們會想要得到使用者所輸入的參數，來打API（例如Restful API的狀況）
+/** 9)  Get input from client - Route parameters */
+// 在這邊的testNum，我們的express會將其認為變數，這個變數會被存到req.params.xxx（同名）
+// 假設route是： /123/echo
+app.get('/:testNum/echo',function(req,res){
+ res.json({'echo': req.params.testNum})
+})
+// 輸出則為 'echo' : 123
+```
+
+## Get Query Parameter Input from the Client
+### 另一個得到使用者輸入的方法是使用Query
+```javascript
+/** 10) Get input from client - Query parameters */
+// /name?first=<firstname>&last=<lastname>
+// 假設我們的router是這樣：http://localhost:3000/name?first=Guan&last=Ting
+app.get('/name',function(req,res,next){
+     console.log(req.query)
+     res.json({ 'name' : `${req.query.first} ${req.query.last}`})
+})
+// 輸出則：name: "Guan Ting"
+// ${req.query.first} 會對應到「?」後面的first=多少（同理last也是）
+```
+
+## Use body-parser to Parse POST Requests
+### 此小章節主要介紹：body-parser
+這個中間件，基本上作用是對POST請求的請求體去做解析
+### body-parser作用
+#### 1. 處理不同類型的請求體：`text`、`json`
+#### 2. 處理不同編碼：`utf8`、`gbk`
+#### 3. 處理不同的壓縮類型：`gzip`、`deflare`
+#### 4. 處理邊界、異常處理
+```javascript
+var express = require('express');
+var bodyParser = require('body-parser')
+var app = express();
+require('dotenv').config()
+
+// --> 11)  Mount the body-parser middleware  here
+app.use(bodyParser.urlencoded({extended: false}))
+```
+
+## Get Data from POST Requests
+### 試著接收post來的資料（注意post適用req.body取資料）
+#### 介紹剩餘的http方法
+#### 1. GET：讀取一個已經存在的資料（沒有修改）
+#### 2. POST：新增一筆資料，有可能是使用者所輸入的或是使用者的request
+#### 3. PUT or PATCH：修改資料
+#### 4. DELETE：刪除資料
+
+```javascript
+/** 12) Get data form POST  */
+app.post('/name',function(req,res,next){
+ let name = `${req.body.first} ${req.body.last}`
+ res.json({'name':name})
+})
+```
+

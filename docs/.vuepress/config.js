@@ -41,7 +41,8 @@ module.exports = {
         'flex',
         'grid',
         'specificity',
-        'box-model'
+        'box-model',
+        'transition'
       ],
       '/React/':[
         '',
@@ -53,17 +54,17 @@ module.exports = {
       '/NodeAndNpm/':[
         '',
         'node1-talk-about-npm',
-        'node2-node-and-express'
+        'node2-node-and-express',
+        'node3-introduction-mongoDB.md'
       ],
       '/Web/':[
         '',
         'request'
       ]
     },
-    themeConfig: {
-      lastUpdated: 'Last Updated', // string | boolean
-      smoothScroll: true,
-      logo:'~/docs/.vuepress/public/logo.png'
-    },
+    lastUpdated: 'Last Updated', // string | boolean
+    smoothScroll: true,
+    sidebarDepth:1,
+    logo:'/logo.png'
   }
 }
