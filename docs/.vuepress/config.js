@@ -38,11 +38,14 @@ module.exports = {
       ],
       '/CSS/':[
         '',
+        'normal',
         'flex',
         'grid',
         'specificity',
         'box-model',
-        'transition'
+        'transition',
+        'animation',
+        'center'
       ],
       '/React/':[
         '',
