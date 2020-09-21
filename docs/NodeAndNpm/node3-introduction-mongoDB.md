@@ -162,3 +162,127 @@ var findOneByFood = function(food, done) {
   })
 };
 ```
+
+## Use model.findById() to Search Your Database By _id
+### 這題我們利用findById來找出unique的資料
+:::danger
+findById()，必定為唯一
+:::
+```javascript
+var findPersonById = function(personId, done) {
+  Person.findById({
+    // 與上面相同，但這邊使用_id做搜尋
+    _id: personId
+  }, function(err,data){
+    if(err){
+      console.log(err)
+    }else{
+      done(null,data)
+    }
+  })
+};
+```
+
+## Perform Classic Updates by Running Find, Edit, then Save
+### 找到_id元素，修改他，然後儲存
+```javascript
+var findEditThenSave = function(personId, done) {
+  var foodToAdd = 'hamburger';
+    // 先找到一個Id
+  Person.findById({
+    _id:personId
+    // 然後第二個參數是一個callback
+  },function(err,data){
+    // 找到後，這個callback修改資料
+    data.favoriteFoods.push(foodToAdd)
+    // 然後儲存的參數導入一個function
+    data.save(function(err, data){
+      if(err){
+        console.log(err)
+      }else{
+        done(null,data)
+      }
+    })
+  })
+};
+```
+
+## Perform New Updates on a Document Using model.findOneAndUpdate()
+### 找到一個document 並且更新他（使用一個function即可）
+```javascript
+var findAndUpdate = function(personName, done) {
+  var ageToSet = 20;
+  Person.findOneAndUpdate({
+    // 同樣地，先找尋一個物件
+    name:personName
+  },{
+    // 要更新的物件的值為？
+    'age' : ageToSet
+  },{
+    // 選擇設定值，如果沒有寫，預設會回傳沒有修改的物件
+    new : true
+  }, function(err,data){
+    if(err){
+      console.log(err)
+    }else{
+      done(null,data)
+    }
+  })
+};
+```
+
+## Delete One Document Using model.findByIdAndRemove
+### 刪除一個document
+### 同時也可用 findByIdAndRemove || findOneAndRemove
+```javascript
+var removeById = function(personId, done) {
+  Person.findByIdAndRemove({
+    // 一樣先找到一個document
+    _id:personId
+  }, function(err,data){
+    if(err){
+      console.log(err)
+    }else{
+      done(null,data)
+    }
+  })
+};
+```
+
+## Delete Many Documents with model.remove()
+### 使用remove()刪除多個documents
+```javascript
+var removeManyPeople = function(done) {
+  var nameToRemove = "Mary";
+    // 這邊直接使用remove來刪除
+  Person.remove({
+    name: nameToRemove
+  }, function(err, data){
+    if(err){
+      console.log(err)
+    }else{
+      done(null,data)
+    }
+  })
+};
+```
+## Chain Search Query Helpers to Narrow Search Results
+### 利用chain rule 來達到目的
+```javascript
+var queryChain = function(done) {
+  var foodToSearch = "burrito";
+    // 首先，先find
+    // 注意sort直接使用'-age'，代表不要這個欄位
+    // 剩下用exec callback表示完成
+  Person.find({favoriteFoods : {$all: [foodToSearch]}})
+    .sort({name:'asc'})
+    .limit(2)
+    .select('-age').exec(function(err,data){
+      if(err){
+        console.log(err)
+      }else{
+        done(null, data)
+      }
+  })
+};
+```

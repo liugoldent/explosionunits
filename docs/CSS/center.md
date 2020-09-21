@@ -21,7 +21,7 @@
 }
 ```
 
-## line-height + inline-block
+## 2. line-height + inline-block
 ### 適用情境：多物件
 ```html
 <div class="lineheighttest">
@@ -47,6 +47,69 @@
   display:inline-block;
     /* 子層line-height設定為1，即可達到置中 */
   line-height:1;
+}
+
+```
+
+## 3.  ::before + inline block
+### 情境：多物件的CSS 垂直置中
+```html
+<div class="box">
+  <div class="content">
+    <a href="">HowHow has no frends</a>
+    <a>這是a1 的test</a>
+  </div>
+</div>
+```
+```css
+.box {
+  width: 300px;
+  height:300px;
+  position:absolute;
+  margin:auto;
+  background-color:gray;
+  text-align:center;
+}
+
+.box::before {
+  content:'';
+  display: inline-block;
+  vertical-align:middle;
+  height:100%;
+}
+
+.box .content {
+  display: inline-block;
+    vertical-align:middle;
+}
+```
+
+## 4. Absolute + margin 負值
+```html
+<div class="box">
+  <div class="inner">
+    </div>
+</div>
+```
+```css
+.box {
+  width: 300px;
+  height:300px;
+  position:absolute;
+  background-color:gray;
+}
+
+.inner {
+  width:100px;
+  height:100px;
+  background-color:red;
+    /* 重點是下面這幾個，絕對定位+top:50% & left:50% */
+  position:absolute;
+  top:50%;
+  left:50%;
+    /* 再加上margin-top || margin-left 負值 */
+  margin-top:-50px;
+  margin-left:-50px;
 }
 
 ```
