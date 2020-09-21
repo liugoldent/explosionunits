@@ -33,6 +33,7 @@ module.exports = {
         'leetcode0005-longest-palindromic-substring',
         'leetcode0006-zigzag-conversion',
         'leetcode0217-contains-duplicate',
+        'leetcode0219-contains-duplicate2',
         'leetcode0509-feibonacci-number',
         'leetcode0804-unique-morse-code-words'
       ],
