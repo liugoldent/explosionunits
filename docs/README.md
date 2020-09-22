@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: About Units
+heroText: 
 tagline: 
 features:
 

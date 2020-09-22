@@ -1,58 +1,121 @@
 <template>
   <div class="DisplayStyle">
-    <div class="circle" id="Green"><router-link to="/Vue">Vue</router-link></div>
-    <div class="circle" id="Blue"><router-link to="/CSS">CSS</router-link></div>
-    <div class="circle" id="Black"><router-link to="/LeetCode">LeetCode</router-link></div>
-    <div class="circle" id="Orange"><router-link to="/React">React</router-link></div>
-    <div class="circle" id="Red"><router-link to="/NodeAndNpm">NPM</router-link></div>
-    <div class="circle" id="Yellow"><router-link to="/Web">Web</router-link></div>
+      <div class="imgcontent">
+        <p>Units</p>
+        <img src="/blogimg/home.jpg">
+      </div>
+
+      <div class="routerContent">
+        <router-link to="/Vue">
+        <div class="routerinner">
+          <p>Vue</p>
+          <img src="https://picsum.photos/300/300?random=1">
+        </div>
+        </router-link>
+
+        <router-link to="/React">
+        <div class="routerinner">
+          <p>React</p>
+          <img src="https://picsum.photos/300/300?random=2">
+        </div>
+        </router-link>
+
+
+        <router-link to="/CSS">
+          <div class="routerinner">
+          <p>CSS</p>
+          <img src="https://picsum.photos/300/300?random=3">
+        </div>
+        </router-link>
+
+
+        <router-link to="/DataStructure">
+          <div class="routerinner">
+          <p>DS</p>
+          <img src="https://picsum.photos/300/300?random=4">
+        </div>
+        </router-link>
+
+
+        <router-link to="/LeetCode">
+          <div class="routerinner">
+            <p>LeetCode</p>
+            <img src="https://picsum.photos/300/300?random=5">
+          </div>
+        </router-link>
+
+
+        <router-link to="/NodeAndNpm">
+          <div class="routerinner">
+            <p>NPM</p>
+            <img src="https://picsum.photos/300/300?random=6">
+          </div>
+        </router-link>
+
+        <router-link to="/Web">
+          <div class="routerinner">
+            <p>Web</p>
+            <img src="https://picsum.photos/300/300?random=7">
+          </div>
+        </router-link>
+      </div>
   </div>
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 .DisplayStyle {
   display: flex;
   flex-direction: row;
   flex-wrap:wrap;
   justify-content: center;
 }
-a {
-  color: white;
+
+.imgcontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Pacifico', cursive;
 }
-.circle{
-  --font-size:200px;
+.imgcontent > p {
+  position: absolute;
+  z-index:1;
+  font-size:200px;
+  color:white;
+  text-shadow: 0.1em 0.1em 0.05em black;
 }
-.circle{
-  margin:10px;
-  text-align: center;
-  font-size:30px;
-  line-height: var(--font-size);
-  width:var(--font-size);
-  height:var(--font-size);
-  border-radius: 999em;
-  font-family: 'Montserrat', sans-serif;
-}
-#Green {
-  background-color: lightgreen;
-}
-#Black {
-  background-color: black;
+.imgcontent > img {
+  box-shadow:0 0 20px 10px ;
+  transform:scale(.85);
 }
 
-#Blue {
-  background-color: cornflowerblue;
+.routerContent {
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.routerinner {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#Orange {
-  background-color: #DAA588;
+.routerinner > p {
+  position: absolute;
+  z-index:1;
+  font-family: 'Permanent Marker', cursive;
+  font-size:50px;
+  color:white;
+  text-shadow: 0.1em 0.1em 0.05em black;
+  -webkit-text-stroke: 1px black;
 }
 
-#Red {
-  background-color: #FF5151;
+.routerinner > img {
+  filter: contrast(30%);
 }
 
-#Yellow {
-  background-color: #E1E100;
-}
 </style>
