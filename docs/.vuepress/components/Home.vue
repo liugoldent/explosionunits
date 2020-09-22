@@ -1,6 +1,5 @@
 <template>
   <div class="DisplayStyle">
-<!--    <div class="circle" id="Green"><a href="https://explosionunis.netlify.app/Vue/">Vue</a></div>-->
     <div class="circle" id="Green"><router-link to="/Vue">Vue</router-link></div>
     <div class="circle" id="Blue"><router-link to="/CSS">CSS</router-link></div>
     <div class="circle" id="Black"><router-link to="/LeetCode">LeetCode</router-link></div>

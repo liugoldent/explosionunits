@@ -8,15 +8,13 @@ module.exports = {
       }
     ]
   ],
+  description:'vue, React, css, html, web, frontend, node.js, npm, 資料結構, 演算法',
   markdown: {
     lineNumbers: true
   },
   themeConfig:{
     nav:[
-      { text:'Vue', link:'/Vue/'},
-      { text:'CSS', link:'/CSS/'},
-      { text:'LeetCode', link:'/LeetCode/'},
-      { text:'React', link:'/React/'},
+      { text:'Home', link:'/'},
     ],
     sidebar:{
       '/Vue/':[
@@ -65,6 +63,11 @@ module.exports = {
       '/Web/':[
         '',
         'request'
+      ],
+      '/DataStructure/':[
+        '',
+        'dynamic-programming',
+        'linked-list'
       ]
     },
     lastUpdated: 'Last Updated', // string | boolean
