@@ -115,7 +115,7 @@
 }
 
 .routerinner > img {
-  filter: contrast(30%);
+  filter: contrast(20%) ;
 }
 
 </style>

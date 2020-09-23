@@ -44,7 +44,8 @@ module.exports = {
         'box-model',
         'transition',
         'animation',
-        'center'
+        'center',
+        'shadow'
       ],
       '/React/':[
         '',
