@@ -1,4 +1,4 @@
-# Transition
+# Transition 過渡
 
 ## 基本概念
 1. transition：轉變

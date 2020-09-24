@@ -104,3 +104,7 @@ div {
     /* 第五參數為顏色 */
 }
 ```
+
+## 參考資料
+[CSS reference-box-shadow](https://cssreference.io/property/box-shadow/)
+[CSS reference-text-shadow](https://cssreference.io/property/text-shadow/)

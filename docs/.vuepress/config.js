@@ -45,7 +45,8 @@ module.exports = {
         'transition',
         'animation',
         'center',
-        'shadow'
+        'shadow',
+        'units'
       ],
       '/React/':[
         '',

@@ -1,4 +1,4 @@
-# Animation
+# Animation 動畫
 
 ## 定義屬性
 1. animation：定義在哪個角色執行哪個動畫
