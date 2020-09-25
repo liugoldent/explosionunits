@@ -319,3 +319,160 @@ class GateKeeper extends React.Component {
 };
 
 ```
+
+## Use Array.map() to Dynamically Render Elements
+### 這邊使用Array.map()返回一連串的數值，來顯現在外面上
+```jsx
+const textAreaStyles = {
+  width: 235,
+  margin: 5
+};
+
+class MyToDoList extends React.Component {
+  constructor(props) {
+    super(props);
+    // change code below this line
+    this.state = {
+      userInput: '',
+      toDoList: []
+    }
+    // change code above this line
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+  }
+  handleSubmit() {
+    const itemsArray = this.state.userInput.split(',');
+    this.setState({
+      toDoList: itemsArray
+    });
+  }
+  handleChange(e) {
+    this.setState({
+      userInput: e.target.value
+    });
+  }
+  render() {
+    // 注意這個其實也可以讓變數=一個function的JSX
+    const items = this.state.toDoList.map(function(data)    
+    {
+        // 然後記得小括號
+      return <li>{data}</li>
+    }) 
+    return (
+      <div>
+        <textarea
+          onChange={this.handleChange}
+          value={this.state.userInput}
+          style={textAreaStyles}
+          placeholder='Separate Items With Commas'
+        />
+        <br />
+        <button onClick={this.handleSubmit}>Create List</button>
+        <h1>My "To Do" List:</h1>
+        <ul>{items}</ul>
+      </div>
+    );
+  }
+}
+
+```
+## Give Sibling Elements a Unique Key Attribute
+### 這次我們一樣渲染列表，但是在li上加上key值
+```jsx
+const frontEndFrameworks = [
+  'React',
+  'Angular',
+  'Ember',
+  'Knockout',
+  'Backbone',
+  'Vue'
+];
+
+function Frameworks() {
+    // 這次map的function參數多傳了一個index
+  const renderFrameworks = frontEndFrameworks.map(function(data,index){
+    // 而我們的li元素，將會綁定key值，所以在render上，只要key值變動，react就會重新render
+    return <li key={index}>{data}</li>
+  })
+  return (
+    <div>
+      <h1>Popular Front End JavaScript Frameworks</h1>
+      <ul>
+        {renderFrameworks}
+      </ul>
+    </div>
+  );
+};
+
+```
+
+## Use Array.filter() to Dynamically Filter an Array
+### 再來主要使用filter & map 做出一樣的list，但注意這次陣列內部是物件
+```jsx
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      users: [
+        {
+          username: 'Jeff',
+          online: true
+        },
+        {
+          username: 'Alan',
+          online: false
+        },
+        {
+          username: 'Mary',
+          online: true
+        },
+        {
+          username: 'Jim',
+          online: false
+        },
+        {
+          username: 'Sara',
+          online: true
+        },
+        {
+          username: 'Laura',
+          online: true
+        }
+      ]
+    };
+  }
+  render() {
+    const usersOnline = this.state.users.filter(data => data.online)
+    const renderOnline = usersOnline.map(function(data,index){
+    // 這邊為物件，所以要用data.username
+      return <li key={index}>{data.username}</li>
+    })
+    return (
+      <div>
+        <h1>Current Online Users:</h1>
+        <ul>{renderOnline}</ul>
+      </div>
+    );
+  }
+}
+
+```
+
+## Render React on the Server with renderToString
+### 在之前，我們都是render在Client端的畫面，現在我們試著render 在Server端
+#### 事實上，React也提供了`renderToString()`這個方法來達到這個目的
+而用Server render主要有兩個好處
+#### 1. for 搜尋引擎來說：比較好被搜尋到。因為如果我們在server render好，搜尋引擎就會讀到我們render好的html
+#### 2. 更快的初始頁面loading：因為render一個HTML，比render一個JS app快。並且在初始loading完後，React也會繼續執行js part
+```jsx
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return <div/>
+  }
+};
+// 記得這個App因為也是Component所以要寫成 <App />
+ReactDOMServer.renderToString(<App />)
+```
