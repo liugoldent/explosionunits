@@ -8,7 +8,7 @@ module.exports = {
       }
     ]
   ],
-  description:'vue, React, css, html, web, frontend, node.js, npm, 資料結構, 演算法',
+  description:'vue, React, css, html, web, frontend, node.js, npm, 資料結構, 演算法, D3.js',
   markdown: {
     lineNumbers: true
   },
@@ -70,6 +70,12 @@ module.exports = {
         '',
         'dynamic-programming',
         'linked-list'
+      ],
+      '/D3':[
+        '',
+        'd30-base-comment',
+        'd31-add-document',
+        'd32-talk-about-svg'
       ]
     },
     lastUpdated: 'Last Updated', // string | boolean
