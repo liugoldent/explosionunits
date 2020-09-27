@@ -1,7 +1,7 @@
 # Add Document
 
 ## Add Document Elements with D3
-### 第一篇主要介紹D3的使用方法(select/append/text)
+### 第一篇主要介紹D3的使用方法(select/append/.bar:hover)
 #### 1. select 主要是選擇[一個]元素
 #### 2. append 附加上一個元素
 #### 3. text 為這個元素加上內容

@@ -58,6 +58,13 @@
             <img src="https://picsum.photos/300/300?random=7">
           </div>
         </router-link>
+
+        <router-link to="/D3">
+          <div class="routerinner">
+            <p>D3</p>
+            <img src="https://picsum.photos/300/300?random=8">
+          </div>
+        </router-link>
       </div>
   </div>
 </template>

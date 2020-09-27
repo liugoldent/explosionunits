@@ -1,6 +1,6 @@
 # Linked List 鏈結串列
 
-## Linked list vs Array
+## 比較：串列與陣列
 ### Array 
 #### Array優點
 1. 存取只需要O(1)
@@ -24,6 +24,9 @@
 #### 適用時機
 1. 無法預期資料量或是需要頻繁變動資料數量時
 2. 不需要快速找尋資料
+
+## 串列思考圖
+![linked-list base](./img/linked-list-base.png)
 
 ## 建立鏈結串列
 ### Node的屬性有
@@ -49,8 +52,8 @@ class Linkedlist {
 }
 ```
 
-## LinkedList 方法
-### append(ele)
+
+## 鏈結串列>方法 1.append(ele)
 ### 從尾部新增元素
 ```javascript
 class Linkedlist {
@@ -85,7 +88,7 @@ class Linkedlist {
 }
 ```
 
-### insert(position, ele)
+## 鏈結串列>方法 2.insert(position, ele)
 ### (從中間插入元素)
 ```javascript
 insert(position, ele) {
@@ -122,10 +125,10 @@ insert(position, ele) {
 }
 ```
 
-### remove(ele)
+## 鏈結串列>方法 3.removeAt(ele)
 ### 移除元素
 ```javascript
-	remove(position){
+	removeAt(position){
 		if(position > -1 && position < this.length){
 			let current = this.head
 			if(position === 0){
@@ -150,7 +153,7 @@ insert(position, ele) {
 	}
 ```
 
-### indexof(ele)
+## 鏈結串列>方法 4.indexof(ele)
 ### 查找某元素存不存在
 ```javascript
 indexof(ele){
@@ -172,11 +175,42 @@ indexof(ele){
 }
 ```
 
-## remove(ele)
+## 鏈結串列>方法 5.remove(ele)
 ### 移除節點
 ```javascript
 remove(ele){
     let index = this.indexof(ele)
     return this.removeAt(index)
 }
+```
+
+## 鏈結串列>方法 6.isEmpty()
+### 看這個串列是否為空，true代表為空（length === 0）
+```javascript
+isEmpty(){
+    return this.length === 0
+}
+```
+
+## 鏈結串列>方法 7.size()
+### 看這個鏈結串列的大小
+```javascript
+size(){
+    return this.length
+}
+```
+
+## 鏈結串列>方法 8.toString()
+### 將這個鏈結串列通通轉成字串
+```javascript
+toString(){
+    let current = this.head
+    let Linkstring = ''
+
+    while(current){
+      Linkstring += current.ele
+      current = current.next
+    }
+    return Linkstring
+  }
 ```

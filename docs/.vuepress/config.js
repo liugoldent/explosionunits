@@ -69,13 +69,16 @@ module.exports = {
       '/DataStructure/':[
         '',
         'dynamic-programming',
-        'linked-list'
+        'linked-list',
+        'set'
       ],
-      '/D3':[
+      '/D3/':[
         '',
         'd30-base-comment',
         'd31-add-document',
-        'd32-talk-about-svg'
+        'd32-talk-about-svg',
+        'd33-change-color-and-label',
+        'd34-create-another-fig'
       ]
     },
     lastUpdated: 'Last Updated', // string | boolean

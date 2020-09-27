@@ -10,3 +10,21 @@
 ```html
 <div style="height:300px;"></div>
 ```
+
+## 2. 基本設置function
+1. selectAll(xxx)
+2. data(???)
+3. enter()
+4. append(xxx)
+5. attr()
+6. 綁定資料：text()
+```javascript
+svg.selectAll("text")
+       .data(dataset)
+       .enter()
+       .append("text")
+        
+       .attr('x', (d, i) => d[0]+5)
+       .attr('y', (d, i) => h - d[1])
+       .text(data => `${data[0]}, ${data[1]}`)
+```
