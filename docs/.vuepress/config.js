@@ -1,5 +1,24 @@
+// const fs = require('fs');
+//
+// function getSideBar(folder) {
+//   // 只能用绝对路径
+//   console.log('1')
+//   return ['','/Users/guantingliu/Desktop/FrontEnd/explosionunits/docs/LeetCode/leetcode0001-two-sum']
+//   path = '/Users/guantingliu/Desktop/FrontEnd/explosionunits/docs/pages' + folder + '/';
+//   let file_list = fs.readdirSync(path);
+//   for (let i = 0; i < file_list.length; i++) {
+//     file_list[i] = file_list[i].slice(0, -3);
+//   }
+//   return file_list;
+// }
 module.exports = {
   title: 'Explosion Units',
+  head:[
+    ['link',{
+      rel:'icon',
+      href:'/logo.png'
+    }]
+  ],
   plugins: [
     [
       '@vuepress/google-analytics',
@@ -30,6 +49,8 @@ module.exports = {
         'leetcode0002-add-two-numbers',
         'leetcode0005-longest-palindromic-substring',
         'leetcode0006-zigzag-conversion',
+        'leetcode0026-remove-duplicates-from-sorted-array',
+        'leetcode0027-remove-element',
         'leetcode0217-contains-duplicate',
         'leetcode0219-contains-duplicate2',
         'leetcode0509-feibonacci-number',
@@ -64,13 +85,16 @@ module.exports = {
       ],
       '/Web/':[
         '',
-        'request'
+        'request',
+        'seo'
       ],
       '/DataStructure/':[
         '',
         'dynamic-programming',
         'linked-list',
-        'set'
+        'set',
+        'dictionary',
+        'hashMap'
       ],
       '/D3/':[
         '',
@@ -79,7 +103,7 @@ module.exports = {
         'd32-talk-about-svg',
         'd33-change-color-and-label',
         'd34-create-another-fig'
-      ]
+      ],
     },
     lastUpdated: 'Last Updated', // string | boolean
     smoothScroll: true,
