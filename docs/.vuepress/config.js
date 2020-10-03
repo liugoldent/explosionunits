@@ -1,16 +1,20 @@
-// const fs = require('fs');
-//
-// function getSideBar(folder) {
-//   // 只能用绝对路径
-//   console.log('1')
-//   return ['','/Users/guantingliu/Desktop/FrontEnd/explosionunits/docs/LeetCode/leetcode0001-two-sum']
-//   path = '/Users/guantingliu/Desktop/FrontEnd/explosionunits/docs/pages' + folder + '/';
-//   let file_list = fs.readdirSync(path);
-//   for (let i = 0; i < file_list.length; i++) {
-//     file_list[i] = file_list[i].slice(0, -3);
-//   }
-//   return file_list;
-// }
+const fs = require("fs");
+const path = require("path");
+
+function getSideBar(folder, title) {
+  const extension = [".md"];
+
+  const files = fs
+    .readdirSync(path.join(`${__dirname}/../${folder}`))
+    .filter(
+      (item) =>
+        item.toLowerCase() != "readme.md" &&
+        fs.statSync(path.join(`${__dirname}/../${folder}`, item)).isFile() &&
+        extension.includes(path.extname(item))
+    );
+
+  return ["", ...files];
+}
 module.exports = {
   title: 'Explosion Units',
   head:[
@@ -36,74 +40,14 @@ module.exports = {
       { text:'Home', link:'/'},
     ],
     sidebar:{
-      '/Vue/':[
-        '',
-        'vue-router-base',
-        'life-circle',
-        'computed-watch',
-        'slot'
-      ],
-      '/LeetCode/':[
-        '',
-        'leetcode0001-two-sum',
-        'leetcode0002-add-two-numbers',
-        'leetcode0005-longest-palindromic-substring',
-        'leetcode0006-zigzag-conversion',
-        'leetcode0026-remove-duplicates-from-sorted-array',
-        'leetcode0027-remove-element',
-        'leetcode0217-contains-duplicate',
-        'leetcode0219-contains-duplicate2',
-        'leetcode0509-feibonacci-number',
-        'leetcode0804-unique-morse-code-words'
-      ],
-      '/CSS/':[
-        '',
-        'normal',
-        'flex',
-        'grid',
-        'specificity',
-        'box-model',
-        'transition',
-        'animation',
-        'center',
-        'shadow',
-        'units'
-      ],
-      '/React/':[
-        '',
-        'react1-introduceJSX',
-        'react2-composeComp',
-        'react3-stateful-component',
-        'react4-pass-state-to-component',
-        'react5-introduce-style'
-      ],
-      '/NodeAndNpm/':[
-        '',
-        'node1-talk-about-npm',
-        'node2-node-and-express',
-        'node3-introduction-mongoDB.md'
-      ],
-      '/Web/':[
-        '',
-        'request',
-        'seo'
-      ],
-      '/DataStructure/':[
-        '',
-        'dynamic-programming',
-        'linked-list',
-        'set',
-        'dictionary',
-        'hashMap'
-      ],
-      '/D3/':[
-        '',
-        'd30-base-comment',
-        'd31-add-document',
-        'd32-talk-about-svg',
-        'd33-change-color-and-label',
-        'd34-create-another-fig'
-      ],
+      '/Vue/':getSideBar('Vue','Vue'),
+      '/LeetCode/':getSideBar('LeetCode','LeetCode'),
+      '/CSS/':getSideBar('CSS','CSS'),
+      '/React/':getSideBar('React','React'),
+      '/NodeAndNpm/':getSideBar('NodeAndNpm','NodeAndNpm'),
+      '/Web/':getSideBar('Web','Web'),
+      '/DataStructure/':getSideBar('DataStructure','DataStructure'),
+      '/D3/':getSideBar('D3','D3')
     },
     lastUpdated: 'Last Updated', // string | boolean
     smoothScroll: true,
