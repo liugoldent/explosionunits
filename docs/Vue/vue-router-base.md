@@ -1,3 +1,12 @@
+---
+{
+  "title": "Vue router",
+  "lang": "zH",
+  "description": "Vue router",
+  "meta": [{"name":"Vue router", "content":"Vue router使用"}],
+  "tags": ['Vue']
+}
+---
 # Vue router (基礎篇)
 
 ## 安裝

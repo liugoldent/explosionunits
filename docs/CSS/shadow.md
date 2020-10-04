@@ -1,3 +1,12 @@
+---
+{
+  "title": "CSS Shadow 陰影",
+  "lang": "zH",
+  "description": "CSS Shadow 陰影",
+  "meta": [{"name":"CSS Shadow 陰影", "content":"css Shadow 陰影"}],
+  "tags": ['CSS']
+}
+---
 # Shadow 陰影
 
 ## text-shadow(文字陰影)

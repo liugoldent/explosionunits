@@ -1,3 +1,12 @@
+---
+{
+  "title": "Life Circle",
+  "lang": "zH",
+  "description": "Life Circle 生命週期",
+  "meta": [{"name":"Life Circle", "content":"Vue生命週期"}],
+  "tags": ['Vue']
+}
+---
 # 生命週期
 
 ## 生命週期介紹（依照順序）

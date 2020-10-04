@@ -1,3 +1,12 @@
+---
+{
+  "title": "CSS Transition 過渡",
+  "lang": "zH",
+  "description": "CSS Transition 過渡",
+  "meta": [{"name":"CSS Transition 過渡", "content":"CSS Transition 過渡"}],
+  "tags": ['CSS']
+}
+---
 # Transition 過渡
 
 ## 基本概念

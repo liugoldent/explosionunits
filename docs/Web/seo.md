@@ -1,3 +1,12 @@
+---
+{
+  "title": "SEO",
+  "lang": "zH",
+  "description": "SEO 解釋",
+  "meta": [{"name":"Web", "content":"SEO 設定"}],
+  "tags": ['Web']
+}
+---
 # SEO 優化
 
 ## Title

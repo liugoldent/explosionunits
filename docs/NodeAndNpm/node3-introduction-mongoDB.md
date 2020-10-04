@@ -1,3 +1,12 @@
+---
+{
+  "title": "Mongo & Mongoose",
+  "lang": "zH",
+  "description": "Mongo & Mongoose",
+  "meta": [{"name":"Mongo & Mongoose", "content":"基本的node 連結mongoDB"}],
+  "tags": ['NPM']
+}
+---
 # Mongo & Mongoose
 
 ### [the guide of mongoose](https://mongoosejs.com/docs/guide.html)

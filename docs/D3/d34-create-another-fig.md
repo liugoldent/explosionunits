@@ -1,3 +1,12 @@
+---
+{
+  "title": "Add others SVG style",
+  "lang": "zH",
+  "description": "Add others SVG style",
+  "meta": [{"name":"D3.js Add others SVG style", "content":"freecodeCamp Add others SVG style"}],
+  "tags": ['D3.js']
+}
+---
 # Add others SVG style
 
 ## Create a Scatterplot with SVG Circles

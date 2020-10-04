@@ -1,3 +1,12 @@
+---
+{
+  "title": "Animation 動畫",
+  "lang": "zH",
+  "description": "Animation 動畫",
+  "meta": [{"name":"CSS Animation", "content":"css Animation 動畫 的使用"}],
+  "tags": ['CSS']
+}
+---
 # Animation 動畫
 
 ## 定義屬性

@@ -1,3 +1,12 @@
+---
+{
+  "title": "Learn the Label and Change SVG color",
+  "lang": "zH",
+  "description": "Learn the Label and Change SVG color",
+  "meta": [{"name":"D3.js Learn the Label and Change SVG color", "content":"freecodeCamp Learn the Label and Change SVG color"}],
+  "tags": ['D3.js']
+}
+---
 # Learn the Label and Change SVG color
 
 ## Change the Color of an SVG Element

@@ -1,3 +1,12 @@
+---
+{
+  "title": "Compose Component",
+  "lang": "zH",
+  "description": "Compose Component",
+  "meta": [{"name":"React Compose Component", "content":"freecodeCamp Compose Component"}],
+  "tags": ['React']
+}
+---
 # Compose Component
 
 ## Create a Component with Composition

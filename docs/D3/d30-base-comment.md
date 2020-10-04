@@ -1,3 +1,12 @@
+---
+{
+  "title": "Base common sense",
+  "lang": "zH",
+  "description": "Base common sense",
+  "meta": [{"name":"D3.js Base common sense", "content":"freecodeCamp Base common sense"}],
+  "tags": ['D3.js']
+}
+---
 # Base common sense
 
 ## 1. D3 attr vs style

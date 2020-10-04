@@ -1,3 +1,12 @@
+---
+{
+  "title": "Talk About SVG",
+  "lang": "zH",
+  "description": "Talk About SVG",
+  "meta": [{"name":"D3.js Talk About SVG", "content":"freecodeCamp Talk About SVG"}],
+  "tags": ['D3.js']
+}
+---
 # Talk About SVG
 
 :::tip

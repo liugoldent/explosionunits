@@ -1,3 +1,12 @@
+---
+{
+  "title": "Stateful Component",
+  "lang": "zH",
+  "description": "Stateful Component",
+  "meta": [{"name":"React Stateful Component", "content":"freecodeCamp Stateful Component"}],
+  "tags": ['React']
+}
+---
 # Stateful Component
 
 ## Create a Stateful Component

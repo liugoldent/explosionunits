@@ -1,3 +1,12 @@
+---
+{
+  "title": "Managin Packages with NPM",
+  "lang": "zH",
+  "description": "Managin Packages with NPM",
+  "meta": [{"name":"Managin Packages with NPM", "content":"npm的基本使用"}],
+  "tags": ['NPM']
+}
+---
 # Managin Packages with NPM
 
 ## Introduction to the Managing Package with npm Challenges

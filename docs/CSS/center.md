@@ -1,3 +1,12 @@
+---
+{
+  "title": "CSS 置中方法",
+  "lang": "zH",
+  "description": "CSS 置中方法",
+  "meta": [{"name":"CSS 置中方法", "content":"css 置中方法"}],
+  "tags": ['CSS']
+}
+---
 # 置中方法
 
 ## 參考資料

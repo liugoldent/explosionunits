@@ -1,3 +1,12 @@
+---
+{
+  "title": "Pass State to Component",
+  "lang": "zH",
+  "description": "Pass State to Component",
+  "meta": [{"name":"React Pass State to Component", "content":"freecodeCamp Pass State to Component"}],
+  "tags": ['React']
+}
+---
 # Pass State to Component
 
 #### 注意事項

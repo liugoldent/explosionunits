@@ -1,3 +1,12 @@
+---
+{
+  "title": "Computed & Watch",
+  "lang": "zH",
+  "description": "Computed 與 Watch 的使用與差別",
+  "meta": [{"name":"Computed & Watch", "content":"Computed 與 Watch 的使用與差別"}],
+  "tags": ['Vue']
+}
+---
 # Computed & Watch
 
 ## 基礎用法

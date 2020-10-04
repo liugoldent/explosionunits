@@ -1,3 +1,12 @@
+---
+{
+  "title": "specificity（CSS 優先權）",
+  "lang": "zH",
+  "description": "specificity（CSS 優先權）",
+  "meta": [{"name":"specificity（CSS 優先權）", "content":"specificity（CSS 優先權）"}],
+  "tags": ['CSS']
+}
+---
 # specificity（CSS 優先權）
 
 ## 基本優先權概念

@@ -1,3 +1,12 @@
+---
+{
+  "title": "Add Document",
+  "lang": "zH",
+  "description": "Add Document",
+  "meta": [{"name":"D3.js Add Document", "content":"freecodeCamp Add Document"}],
+  "tags": ['D3.js']
+}
+---
 # Add Document
 
 ## Add Document Elements with D3

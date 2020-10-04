@@ -1,3 +1,12 @@
+---
+{
+  "title": "Introduce react inline style",
+  "lang": "zH",
+  "description": "Introduce react inline style",
+  "meta": [{"name":"React Introduce react inline style", "content":"freecodeCamp Introduce react inline style"}],
+  "tags": ['React']
+}
+---
 # Introduce react inline style
 
 ## Introducing Inline Styles

@@ -1,3 +1,12 @@
+---
+{
+  "title": "Basic Node and Express",
+  "lang": "zH",
+  "description": "Basic Node and Express",
+  "meta": [{"name":"Basic Node and Express", "content":"基本的node與Express"}],
+  "tags": ['NPM']
+}
+---
 # Basic Node and Express
 
 ## Meet the node console
