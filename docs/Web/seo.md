@@ -13,7 +13,7 @@
 ### 一、所謂的title tag
 1. 是在HTML中定義網頁標題的工具
 2. 也用於搜尋頁的標題
-```html
+```html 
 <head>
     <title>SEO的大小事</title>
 </head>
