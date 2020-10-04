@@ -1,3 +1,16 @@
+---
+{
+  "title": "Longest Palindromic substring",
+  "lang": "zH",
+  "description": "leetcode Longest Palindromic substring",
+  "meta": [
+            {"name":"Longest Palindromic substring", "content":"Longest Palindromic substring"},
+            {"name":"Longest Palindromic substring javascript", "content":"Longest Palindromic substring javascript"},
+            {"name":"leetcode Longest Palindromic substring", "content":"leetcode Longest Palindromic substring"}
+            ],
+  "tags": ['leetcode']
+}
+---
 # 5. Longest Palindromic substring
 
 ## 敘述

@@ -1,3 +1,16 @@
+---
+{
+  "title": "ZigZag Conversion",
+  "lang": "zH",
+  "description": "leetcode ZigZag Conversion",
+  "meta": [
+            {"name":"ZigZag Conversion", "content":"ZigZag Conversion"},
+            {"name":"ZigZag Conversion javascript", "content":"ZigZag Conversion javascript"},
+            {"name":"leetcode ZigZag Conversion", "content":"leetcode ZigZag Conversion"}
+            ],
+  "tags": ['leetcode']
+}
+---
 # 6. ZigZag Conversion
 
 

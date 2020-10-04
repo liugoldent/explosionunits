@@ -1,3 +1,16 @@
+---
+{
+  "title": "Unique Morse Code Words",
+  "lang": "zH",
+  "description": "leetcode Unique Morse Code Words",
+  "meta": [
+            {"name":"Unique Morse Code Words", "content":"Unique Morse Code Words"},
+            {"name":"Unique Morse Code Words javascript", "content":"Unique Morse Code Words javascript"},
+            {"name":"leetcode Unique Morse Code Words", "content":"leetcode Unique Morse Code Words"}
+            ],
+  "tags": ['leetcode']
+}
+---
 # 804. Unique Morse Code Words
 ### 求出獨特的摩斯密碼
 

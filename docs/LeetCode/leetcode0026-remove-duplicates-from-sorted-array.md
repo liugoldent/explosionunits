@@ -1,3 +1,16 @@
+---
+{
+  "title": "Remove Duplicates from Sorted Array",
+  "lang": "zH",
+  "description": "leetcode Remove Duplicates from Sorted Array",
+  "meta": [
+            {"name":"Remove Duplicates from Sorted Array", "content":"Remove Duplicates from Sorted Array"},
+            {"name":"Remove Duplicates from Sorted Array javascript", "content":"Remove Duplicates from Sorted Array javascript"},
+            {"name":"leetcode Remove Duplicates from Sorted Array", "content":"leetcode Remove Duplicates from Sorted Array"}
+            ],
+  "tags": ['leetcode']
+}
+---
 # 26. Remove Duplicates from Sorted Array
 ### 移除同樣的元素
 

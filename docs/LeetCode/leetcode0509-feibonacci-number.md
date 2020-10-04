@@ -1,3 +1,16 @@
+---
+{
+  "title": "Fibonacci Number",
+  "lang": "zH",
+  "description": "leetcode Fibonacci Number",
+  "meta": [
+            {"name":"Fibonacci Number", "content":"Fibonacci Number"},
+            {"name":"Fibonacci Number javascript", "content":"Fibonacci Number javascript"},
+            {"name":"leetcode Fibonacci Number", "content":"leetcode Fibonacci Number"}
+            ],
+  "tags": ['leetcode']
+}
+---
 # 509. Fibonacci Number
 ### 婓波那契數列
 

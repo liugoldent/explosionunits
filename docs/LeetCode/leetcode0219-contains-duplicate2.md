@@ -1,3 +1,16 @@
+---
+{
+  "title": "Contains Duplicate II",
+  "lang": "zH",
+  "description": "leetcode Contains Duplicate II",
+  "meta": [
+            {"name":"Contains Duplicate II", "content":"Contains Duplicate II"},
+            {"name":"Contains Duplicate II javascript", "content":"Contains Duplicate II javascript"},
+            {"name":"leetcode Contains Duplicate II", "content":"leetcode Contains Duplicate II"}
+            ],
+  "tags": ['leetcode']
+}
+---
 # 219. Contains Duplicate II
 ### 是否包含重複值part2
 

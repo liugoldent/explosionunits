@@ -1,3 +1,16 @@
+---
+{
+  "title": "Remove Element",
+  "lang": "zH",
+  "description": "leetcode Remove Element",
+  "meta": [
+            {"name":"Remove Element", "content":"Remove Element"},
+            {"name":"Remove Element javascript", "content":"Remove Element javascript"},
+            {"name":"leetcode Remove Element", "content":"leetcode Remove Element"}
+            ],
+  "tags": ['leetcode']
+}
+---
 # 27. Remove Element
 ### 移除一個給定的元素(注意不可使用另一個陣列來解題)
 

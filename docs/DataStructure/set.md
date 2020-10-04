@@ -1,3 +1,12 @@
+---
+{
+  "title": "Set 集合",
+  "lang": "zH",
+  "description": "集合的操作與使用",
+  "meta": [{"name":"set", "content":"集合"}],
+  "tags": ['資料結構']
+}
+---
 # Set 集合
 
 ## 定義

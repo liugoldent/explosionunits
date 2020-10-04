@@ -1,3 +1,16 @@
+---
+{
+  "title": "Contains Duplicate",
+  "lang": "zH",
+  "description": "leetcode Contains Duplicate",
+  "meta": [
+            {"name":"Contains Duplicate", "content":"Contains Duplicate"},
+            {"name":"Contains Duplicate javascript", "content":"Contains Duplicate javascript"},
+            {"name":"leetcode Contains Duplicate", "content":"leetcode Contains Duplicate"}
+            ],
+  "tags": ['leetcode']
+}
+---
 # 217. Contains Duplicate
 ### 是否包含重複值
 

@@ -1,3 +1,16 @@
+---
+{
+  "title": "Two Sum",
+  "lang": "zH",
+  "description": "leetcode two sum",
+  "meta": [
+            {"name":"two sum", "content":"two sum"},
+            {"name":"two sum javascript", "content":"two sum javascript"},
+            {"name":"leetcode two sum", "content":"leetcode two sum"}
+            ],
+  "tags": ['leetcode']
+}
+---
 # 1. Two Sum
 
 ## 敘述
