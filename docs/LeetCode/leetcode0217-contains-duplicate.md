@@ -1,6 +1,6 @@
 ---
 {
-  "title": "Contains Duplicate",
+  "title": "0217 - Contains Duplicate",
   "lang": "zH",
   "description": "leetcode Contains Duplicate",
   "meta": [

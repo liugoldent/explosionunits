@@ -2,7 +2,7 @@
 {
   "title": "Tree 樹",
   "lang": "zH",
-  "description": "介紹資料結構中，樹的使用",
+  "description": "在這章主要會講樹的基本術語，以及二元樹和二元搜尋樹",
   "meta": [{"name":"Tree", "content":"樹"}],
   "tags": ['資料結構']
 }
@@ -137,7 +137,7 @@ class BinarySearchTree {
         }
         return null
     }
-    findMinNode(){
+    findMinNode(node){
         if(node.left === null){
             return node
         }else{
@@ -269,32 +269,43 @@ class BinarySearchTree {
         this.root = this.removeNode(this.root, val)
     }
     removeNode(node, val){
+        // 如果原本樹就為空，則直接 return null
         if(node === null){
             return null
         }
+        // 如果資料小於節點資料，就遞迴往下做
         if(val < node.data){
             node.left = this.removeNode(node.left, val)
+            // 記得遞迴之後return 的 node 會回來做事
             return node
         }else if(val > node.data){
             node.right = this.removeNode(node.right, val)
             return node
         }else{
+            // 當左右兩邊節點為空時，則做這邊
             if(node.left === null && node.right === null){
             node = null
             return node
         }
-    
+        // 如果左邊的節點為空，則直接讓他等於right的
         if(node.left === null){
             node = node.right
             return node
         }else if(node.right === null){
+        // 反之相同
             node = node.left
             return node
         }
     
+        // 最後是如果是下面有兩個以上的節點
+        
+        // 1. 首先先找到右子樹最小的節點
         let aux = this.findMinNode(node.right)
-        node.key = aux.key
-        node.right = this.remove(node.right, aux.data)
+        // 2. 然後讓這個最小的節點的值，等於目前節點的值
+        node.data = aux.data
+        // 3. 但是這樣相等後，會有重複值，所以需要刪除最小的點
+        node.right = this.removeNode(node.right, aux.data)
+        // 最後return node
         return node
         }
     }

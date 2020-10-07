@@ -1,6 +1,6 @@
 ---
 {
-  "title": "Remove Element",
+  "title": "0027 - Remove Element",
   "lang": "zH",
   "description": "leetcode Remove Element",
   "meta": [

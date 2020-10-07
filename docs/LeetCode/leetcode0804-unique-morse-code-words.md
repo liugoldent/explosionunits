@@ -1,6 +1,6 @@
 ---
 {
-  "title": "Unique Morse Code Words",
+  "title": "0804 - Unique Morse Code Words",
   "lang": "zH",
   "description": "leetcode Unique Morse Code Words",
   "meta": [

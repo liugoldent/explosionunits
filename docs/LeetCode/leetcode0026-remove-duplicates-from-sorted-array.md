@@ -1,6 +1,6 @@
 ---
 {
-  "title": "Remove Duplicates from Sorted Array",
+  "title": "0026 - Remove Duplicates from Sorted Array",
   "lang": "zH",
   "description": "leetcode Remove Duplicates from Sorted Array",
   "meta": [

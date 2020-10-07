@@ -1,6 +1,6 @@
 ---
 {
-  "title": "ZigZag Conversion",
+  "title": "0006 - ZigZag Conversion",
   "lang": "zH",
   "description": "leetcode ZigZag Conversion",
   "meta": [

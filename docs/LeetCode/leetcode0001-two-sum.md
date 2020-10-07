@@ -1,6 +1,6 @@
 ---
 {
-  "title": "Two Sum",
+  "title": "0001 - Two Sum",
   "lang": "zH",
   "description": "leetcode two sum",
   "meta": [
