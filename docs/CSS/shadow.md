@@ -1,6 +1,6 @@
 ---
 {
-  "title": "CSS Shadow 陰影",
+  "title": "Shadow 陰影",
   "lang": "zH",
   "description": "CSS Shadow 陰影",
   "meta": [{"name":"CSS Shadow 陰影", "content":"css Shadow 陰影"}],

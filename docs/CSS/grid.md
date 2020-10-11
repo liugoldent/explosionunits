@@ -1,6 +1,6 @@
 ---
 {
-  "title": "CSS Grid",
+  "title": "Grid",
   "lang": "zH",
   "description": "CSS Grid",
   "meta": [{"name":"CSS Grid", "content":"css Grid"}],

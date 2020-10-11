@@ -1,6 +1,6 @@
 ---
 {
-  "title": "CSS Flex",
+  "title": "Flex",
   "lang": "zH",
   "description": "CSS Flex",
   "meta": [{"name":"CSS Flex", "content":"css Flex"}],

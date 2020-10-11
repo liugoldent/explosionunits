@@ -6,6 +6,13 @@
       </div>
 
       <div class="routerContent">
+        <router-link to="/JavaScript">
+          <div class="routerinner">
+            <p>JavaScript</p>
+            <img src="https://picsum.photos/300/300?random=9">
+          </div>
+        </router-link>
+
         <router-link to="/Vue">
         <div class="routerinner">
           <p>Vue</p>

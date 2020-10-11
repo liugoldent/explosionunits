@@ -40,6 +40,7 @@ module.exports = {
       { text:'Home', link:'/'},
     ],
     sidebar:{
+      '/JavaScript/':getSideBar('JavaScript','JavaScript'),
       '/Vue/':getSideBar('Vue','Vue'),
       '/LeetCode/':getSideBar('LeetCode','LeetCode'),
       '/CSS/':getSideBar('CSS','CSS'),

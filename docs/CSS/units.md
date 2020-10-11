@@ -1,6 +1,6 @@
 ---
 {
-  "title": "CSS Units 單位",
+  "title": "Units 單位",
   "lang": "zH",
   "description": "CSS Units 單位",
   "meta": [{"name":"CSS Units 單位", "content":"CSS Units 單位"}],
