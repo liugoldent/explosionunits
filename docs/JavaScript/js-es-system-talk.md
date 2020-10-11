@@ -15,6 +15,7 @@
 }
 ---
 # ES6、ES7、ES8、ES9、ES10 新特性
+![ES6、ES7、ES8、ES9、ES10 新特性](./img/es-new.png)
 
 ## ES6
 ### class
