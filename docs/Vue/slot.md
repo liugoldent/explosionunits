@@ -3,7 +3,8 @@
   "title": "slot",
   "lang": "zH",
   "description": "slot（插槽）",
-  "meta": [{"name":"slot", "content":"vue中slot插槽介紹與使用"}],
+  "meta": [{"name":"slot", "content":"vue中slot插槽介紹與使用"},
+           {"name":"vue-slot", "content":"vue中slot插槽介紹與使用"}],
   "tags": ['Vue']
 }
 ---
@@ -27,7 +28,7 @@
 <!--test.vue-->
 <a hrf="#">
   <slot></slot>
-  當組件在渲染時，<slot></slot>就會被替換成Hello World
+  <!--  當組件在渲染時，<slot></slot>就會被替換成Hello World-->
 </a>
 ```
 

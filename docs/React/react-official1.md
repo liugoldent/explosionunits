@@ -1,13 +1,14 @@
 ---
 {
-  "title": "React 主要概念",
+  "title": "React 主要概念-p1",
   "lang": "zH",
   "description": "React 主要概念",
   "meta": [{"name":"React 主要概念", "content":"React 主要概念"}],
-  "tags": ['React']
+  "tags": ['React'],
+  "sidebarDepth": "2"
 }
 ---
-# React 主要概念.p1
+# React 主要概念-p1
 ## Hello World
 ```jsx
 ReactDOM.render(
