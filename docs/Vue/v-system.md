@@ -132,18 +132,180 @@ let object = {
 1. 縮寫 `@`
 2. 預期接收 `function | Inline Statement | Object`
 #### 事件修飾符
+```vue
+<!--.stop - 原理:調用event.stopPropagation()-->
+<!--停止冒泡事件-->
+<button @click.stop="DoThing"></button>
+
+<!--.prevent - 原理:調用event.preventDefault()-->
+<!--阻止默認行為-->
+<button @click.prevent="DoThing"></button>
+
+<!--.capture - 添加事件監聽器時使用capture模式-->
+<!--設定capture事件一定會先觸發-->
+<button @click.capture="DoThing"></button>
+
+<!--.self - 只有觸發此DOM元素本身才會觸發self事件-->
+<button @click.self="DoThing"></button>
+
+<!--.native - 監聽根元素的原生事件-->
+<!--使用於自定義component上-->
+<button @click.native="DoThing"></button> 無效!!!!!!!!!!
+<my-component @click.native="DoThing" /> 有效
+
+<!--.left / .right / .middle--> 
+<!--對滑鼠左鍵/右鍵/中鍵的觸發-->
+<button @click.left="DoThing"></button>
+
+<!--.passive 執行默認行為-->
+<!--意義為告訴瀏覽器不用查詢是否有阻止默認行為,直接使用默認行為-->
+<button @click.passive="DoThing"></button>
+```
 #### 按鍵修飾符
+```vue
+<!-- 可選：keyup | keydown | keypress-->
+<!-- 可選：.enter | .tab | .delete | .esc | .spave | .up | .down | .left | .right-->
+<!-- 下面是只有在enter時才會有動作產生-->
+<input v-on:keyup.enter="submit">
+```
 #### 系統修飾符
+```vue
+<!-- 可選： .ctrl | .alt | .shift | .meta-->
+<!-- Ctrl + Click 動作-->
+<input v-on.click.ctrl="doSomething">
+
+<!--.exact 精準修飾-->
+<!-- 只有在 click + ctrl 才會被觸發 -->
+<button v-on:click.ctrl.exact="onCtrlClick">A</button>
+```
+
 ## v-bind
+1. 縮寫 `:`
+2. 預期：any | object
+3. 官網示範
+```vue
+<!--屬性(attribute)綁定-->
+<img v-bind:src="imgSrc"> || <img :src="imgSrc">
+<!--or-->
+<img v-bind:[key]="imSrc"> || <img :[key]="imSrc">
+
+<!--內聯字符串接-->
+<img :src="'./path/to/images/' + fileName">
+
+<!--class 綁定-->
+<div :class="{red: isRed}"></div>
+<div :class="[classA, classB]"></div>
+<div :class="[classA, {classB: isB, classC: isC}]"></div>
+
+<!--prop綁定-->
+<child-component :prop="fatherMsg"></child-component>
+
+<!--通過$props將父組件的props一起傳給子組件-->
+<child-component v-bind="$props"></child-component>
+```
+4. v-bind.camel
+```vue
+<!--注意這邊的camel，原本的v-bind不能用camel，現在可以了-->
+<child-component :view-box.camel="viewStatus"></child-component>
+```
+5. v-bind.sync
+[props.sync 溝通方式](https://ithelp.ithome.com.tw/articles/10225314)
+```vue
+<!--談談.sync 語法糖-->
+<father-component>
+  <!--  在這邊，加上sync，會讓子組件在改變message時，就同步更新父組件的同一筆資料-->
+  <child-component :parent-message.sync="message"></child-component>
+</father-component>
+
+// vs
+
+<father-component>
+  <!--  然而在這邊，因為沒有sync，就要變成 > 在子組件更新完資料後，再@emit事件上來，才能夠更新父組件資料-->
+  <child-component :parent-message="message"></child-component>
+</father-component>
+``` 
+6. v-bind.prop：將綁定的屬性設定為DOM property，而非attribute
+[Vue.js: 屬性綁定 v-bind、Class 與 Style 綁定](https://cythilya.github.io/2017/04/21/vue-v-bind-class-and-style/)
+[HTML attribute与DOM property之间的区别？](https://segmentfault.com/a/1190000008781121)
+* attribute：元素物件屬性
+* property：元素標籤屬性
+```vue
+<!--var element = document.getElementsByTagName('a')-->
+
+<!--假設今天是這樣的html-->
+<a href="" :data="hint"></a>
+<!--那麼這樣可以使用element.getAttribute取值。但無法利用element.data取值。-->
+
+<!--假設今天設定成property，在看html時，是看不到此值的-->
+<a href="" :data.prop="hint"></a>
+<!--可以使用element.data取值-->
+```
 
 ## v-model
+#### 雙向綁定的基本元素
+1. 原理：data透過defineProperty為元件內屬性重新定義getter and setter。當data更改時，通知setter，觸發watcher變化，再渲染
+首先你要有
+* data：儲存資料或元件狀態
+* 在template上使用v-model
+```vue
+<input type="text" v-model="message">
+```
+```javascript
+let vm = new Vue({
+    data: {
+        message: 'Hello'
+    }
+})
+```
+2. .lazy 修飾符
+默認情況下，v-model在每次input事件都會將輸入框的數值進行同步，但加上lazy會在change後才會同步
+```vue
+<input v-model.lazy="msg">
+```
+3. .number 修飾
+自動將用戶輸入的數值轉為數字
+```vue
+<input v-model.number="age" type="number">
+```
+4. .trim
+若要自動過濾用戶輸入的首尾空白字串，可以給v-model一個trim修飾
+```vue
+<input v-model.trim="msg">
+```
 
 ## v-pre
-
+#### 定義v-pre時,代表這個地方不會被編譯
+```vue
+<div v-pre>
+    {{ a }} + {{ b }}
+<!--編譯出來的顯示就是 {{ a }} + {{ b }}-->
+</div>
+```
 ## v-cloak
+#### 在標籤中加入一個v-cloak 自定義屬性,在HTML編譯完之後,這個屬性就會被刪除
+```vue
+<div v-cloak>
+    {{a}} + {{b}}
+</div>
+```
+```css
+[v-cloak]{
+    display: none;
+}
+```
 
 ## v-once
 #### 將 data 內容渲染完成後，不追蹤其變化
+也就是只渲染元素或組件一次,隨後的重新渲染,元素/組件及其他所有的子節點將被視為靜態內容並跳過.這可以用於優化更新性能
+```vue
+<!--單元素-->
+<span v-once>This will never change</span>
+<!--多元素-->
+<div v-once>
+    <h1>Hi</h1>
+    <h2>{{ msg }}</h2>
+</div>
+```
 
 
 ## 參考資料
