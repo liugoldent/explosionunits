@@ -2,12 +2,8 @@
 {
   "title": "0005 - Longest Palindromic substring",
   "lang": "zH",
-  "description": "leetcode Longest Palindromic substring",
-  "meta": [
-            {"name":"Longest Palindromic substring", "content":"Longest Palindromic substring"},
-            {"name":"Longest Palindromic substring javascript", "content":"Longest Palindromic substring javascript"},
-            {"name":"leetcode Longest Palindromic substring", "content":"leetcode Longest Palindromic substring"}
-            ],
+  "description": "leetcode Longest Palindromic substring js answer",
+  "meta": [{"name":"keywords", "content":"leetcode Longest Palindromic substring js answer, Longest Palindromic substring"}],
   "tags": ['leetcode']
 }
 ---

@@ -2,12 +2,8 @@
 {
   "title": "0001 - Two Sum",
   "lang": "zH",
-  "description": "leetcode two sum",
-  "meta": [
-            {"name":"two sum", "content":"two sum"},
-            {"name":"two sum javascript", "content":"two sum javascript"},
-            {"name":"leetcode two sum", "content":"leetcode two sum"}
-            ],
+  "description": "leetcode two sum js answer",
+  "meta": [{"name":"keywords", "content":"leetcode two sum js answer,leetcode two sum"}],
   "tags": ['leetcode']
 }
 ---

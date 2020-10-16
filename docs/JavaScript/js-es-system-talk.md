@@ -3,13 +3,7 @@
   "title": "ES6、ES7、ES8、ES9、ES10 新特性",
   "lang": "zH",
   "description": "在這篇，我們可以會了解到ES6、ES7、ES8、ES9、ES10 的新特性",
-  "meta": [{"name":"ES6", "content":"ES6 新特性"},
-            {"name":"ES7", "content":"ES7 新特性"},
-            {"name":"ES8", "content":"ES8 新特性"},
-            {"name":"ES9", "content":"ES9 新特性"},
-            {"name":"ES10", "content":"ES10 新特性"},
-            {"name":"ES6、ES7、ES8、ES9、ES10 新特性", "content":"ES6、ES7、ES8、ES9、ES10 新特性"},
-            ],
+  "meta": [{"name":"keywords", "content":"ES6、ES7、ES8、ES9、ES10 的新特性, ES6, ES7, ES8, ES9, ES10"}],
   "tags": ['JavaScript'],
   "sidebarDepth": "2"
 }

@@ -2,8 +2,8 @@
 {
   "title": "Transition 過渡",
   "lang": "zH",
-  "description": "CSS Transition 過渡",
-  "meta": [{"name":"CSS Transition 過渡", "content":"CSS Transition 過渡"}],
+  "description": "此篇會介紹 CSS Transition 過渡的語法以及常用方式",
+  "meta": [{"name":"keywords", "content":"CSS Transition 過渡, css, css3, css Transition"}],
   "tags": ['CSS']
 }
 ---

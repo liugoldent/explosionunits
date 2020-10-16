@@ -3,7 +3,7 @@
   "title": "Queue 佇列",
   "lang": "zH",
   "description": "在堆疊之後，我們將要看到佇列的這種資料結構行為",
-  "meta": [{"name":"Queue", "content":"佇列"}],
+  "meta": [{"name":"keywords", "content":"佇列, queue,DataStructure,JavaScript DataStructure"}],
   "tags": ['資料結構']
 }
 ---

@@ -2,12 +2,10 @@
 {
   "title": "0219 - Contains Duplicate II",
   "lang": "zH",
-  "description": "leetcode Contains Duplicate II",
+  "description": "leetcode Contains Duplicate II js answer",
   "meta": [
-            {"name":"Contains Duplicate II", "content":"Contains Duplicate II"},
-            {"name":"Contains Duplicate II javascript", "content":"Contains Duplicate II javascript"},
-            {"name":"leetcode Contains Duplicate II", "content":"leetcode Contains Duplicate II"}
-            ],
+            {"name":"keywords", "content":"leetcode Contains Duplicate II js answer,Contains Duplicate II"},
+          ],
   "tags": ['leetcode']
 }
 ---

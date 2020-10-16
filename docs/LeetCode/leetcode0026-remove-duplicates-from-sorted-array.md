@@ -2,12 +2,10 @@
 {
   "title": "0026 - Remove Duplicates from Sorted Array",
   "lang": "zH",
-  "description": "leetcode Remove Duplicates from Sorted Array",
+  "description": "leetcode Remove Duplicates from Sorted Array js answer",
   "meta": [
-            {"name":"Remove Duplicates from Sorted Array", "content":"Remove Duplicates from Sorted Array"},
-            {"name":"Remove Duplicates from Sorted Array javascript", "content":"Remove Duplicates from Sorted Array javascript"},
-            {"name":"leetcode Remove Duplicates from Sorted Array", "content":"leetcode Remove Duplicates from Sorted Array"}
-            ],
+            {"name":"keywords", "content":"leetcode Remove Duplicates from Sorted Array js answer,Remove Duplicates from Sorted Array"},
+          ],
   "tags": ['leetcode']
 }
 ---

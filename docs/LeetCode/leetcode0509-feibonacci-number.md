@@ -2,12 +2,10 @@
 {
   "title": "0509 - Fibonacci Number",
   "lang": "zH",
-  "description": "leetcode Fibonacci Number",
+  "description": "leetcode Fibonacci Number js answer",
   "meta": [
-            {"name":"Fibonacci Number", "content":"Fibonacci Number"},
-            {"name":"Fibonacci Number javascript", "content":"Fibonacci Number javascript"},
-            {"name":"leetcode Fibonacci Number", "content":"leetcode Fibonacci Number"}
-            ],
+            {"name":"keywords", "content":"leetcode Fibonacci Number js answer,Fibonacci Number"},
+          ],
   "tags": ['leetcode']
 }
 ---

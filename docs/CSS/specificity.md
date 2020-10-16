@@ -2,8 +2,8 @@
 {
   "title": "specificity（CSS 優先權）",
   "lang": "zH",
-  "description": "specificity（CSS 優先權）",
-  "meta": [{"name":"specificity（CSS 優先權）", "content":"specificity（CSS 優先權）"}],
+  "description": "此篇會介紹 specificity（CSS 優先權）的語法以及常用方式",
+  "meta": [{"name":"keywords", "content":"specificity（CSS 優先權）, css, css3, css specificity"}],
   "tags": ['CSS']
 }
 ---

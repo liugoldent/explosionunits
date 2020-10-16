@@ -3,7 +3,7 @@
   "title": "Set 集合",
   "lang": "zH",
   "description": "集合的操作與使用",
-  "meta": [{"name":"set", "content":"集合"}],
+  "meta": [{"name":"keywords", "content":"集合,set,DataStructure,JavaScript DataStructure"}],
   "tags": ['資料結構']
 }
 ---

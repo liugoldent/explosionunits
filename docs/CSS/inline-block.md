@@ -2,8 +2,8 @@
 {
   "title": "Inline vs Inline-block",
   "lang": "zH",
-  "description": "CSS Inline vs Inline-block",
-  "meta": [{"name":"CSS Inline vs Inline-block", "content":"CSS Inline vs Inline-block"}],
+  "description": "此篇會介紹 CSS Inline vs Inline-block 的樣式",
+  "meta": [{"name":"keywords", "content":"CSS Inline vs Inline-block, css, css3, css inline, css inline-block, css block"}],
   "tags": ['CSS']
 }
 ---

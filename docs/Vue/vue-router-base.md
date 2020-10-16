@@ -2,8 +2,8 @@
 {
   "title": "Vue router",
   "lang": "zH",
-  "description": "Vue router",
-  "meta": [{"name":"Vue router", "content":"Vue router使用"}],
+  "description": "此篇主要介紹 vue 的 router",
+  "meta": [{"name":"keywords", "content":"Vue router使用, vue-router"}],
   "tags": ['Vue']
 }
 ---

@@ -2,12 +2,10 @@
 {
   "title": "0933 - Number of Recent Calls",
   "lang": "zH",
-  "description": "leetcode Number of Recent Calls",
+  "description": "leetcode Number of Recent Calls js answer",
   "meta": [
-            {"name":"Number of Recent Calls", "content":"Number of Recent Calls"},
-            {"name":"Number of Recent Calls javascript", "content":"Number of Recent Calls javascript"},
-            {"name":"leetcode Number of Recent Calls", "content":"leetcode Number of Recent Calls"}
-            ],
+            {"name":"keywords", "content":"leetcode Number of Recent Calls js answer,Number of Recent Calls"},
+          ],
   "tags": ['leetcode']
 }
 ---

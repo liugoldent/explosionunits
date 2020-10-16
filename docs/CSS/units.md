@@ -2,8 +2,8 @@
 {
   "title": "Units 單位",
   "lang": "zH",
-  "description": "CSS Units 單位",
-  "meta": [{"name":"CSS Units 單位", "content":"CSS Units 單位"}],
+  "description": "此篇會介紹 CSS Units 的常見單位與其區別",
+  "meta": [{"name":"keywords", "content":"CSS Units 單位, css, css3, css units"}],
   "tags": ['CSS']
 }
 ---

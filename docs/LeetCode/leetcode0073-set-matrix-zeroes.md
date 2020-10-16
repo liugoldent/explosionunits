@@ -2,12 +2,10 @@
 {
   "title": "0073 - Set Matrix Zeroes",
   "lang": "zH",
-  "description": "leetcode Set Matrix Zeroes",
+  "description": "leetcode Set Matrix Zeroes js answer",
   "meta": [
-            {"name":"Set Matrix Zeroes", "content":"Set Matrix Zeroes"},
-            {"name":"Set Matrix Zeroes javascript", "content":"Set Matrix Zeroes javascript"},
-            {"name":"leetcode Set Matrix Zeroes", "content":"leetcode Set Matrix Zeroes"}
-            ],
+            {"name":"keywords", "content":"leetcode Set Matrix Zeroes js answer,Set Matrix Zeroes"},
+          ],
   "tags": ['leetcode']
 }
 ---

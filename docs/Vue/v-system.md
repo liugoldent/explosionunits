@@ -2,8 +2,8 @@
 {
   "title": "V-system",
   "lang": "zH",
-  "description": "slot（插槽）",
-  "meta": [{"name":"V-system", "content":"此篇主要紀錄關於「v-」修飾符的用法與意義"}],
+  "description": "此篇主要介紹 vue 的一些基本用法",
+  "meta": [{"name":"keywords", "content":"v-text,v-html,v-if,v-else,v-else-if,v-show,v-for,v-on,v-bind,v-model,v-pre,v-cloak,v-once"}],
   "tags": ['Vue']
 }
 ---
@@ -40,7 +40,7 @@
 <p>{{ msg }}</p>  (3)
 ```
 1. 以上三者渲染相同，但是 (1) & (2)在尚未加載完成前，不會被渲染出來。
-2. v-text & v-html 只能根據data 設置的內容渲染，但是 {{ msg }} 可以增加贅字。例如 +++ {{ msg }} +++
+2. v-text & v-html 只能根據data 設置的內容渲染，但是 `{ msg }` 可以增加贅字。例如 `+++ { msg } +++`
 3. 若 msg = `<h1>Hello World</h1>`。那v-text & {{}} 會渲染出字串。但 v-html 會渲染出 Hello World
 
 ---------------------------------------

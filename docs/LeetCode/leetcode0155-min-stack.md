@@ -2,12 +2,10 @@
 {
   "title": "0155 - Min Stack",
   "lang": "zH",
-  "description": "leetcode Min Stack",
+  "description": "leetcode Min Stack js answer",
   "meta": [
-            {"name":"Min Stack", "content":"Min Stack"},
-            {"name":"Min Stack javascript", "content":"Min Stack javascript"},
-            {"name":"leetcode Min Stack", "content":"leetcode Min Stack"}
-            ],
+            {"name":"keywords", "content":"leetcode Min Stack js answer,Min Stack"},
+          ],
   "tags": ['leetcode']
 }
 ---

@@ -2,8 +2,8 @@
 {
   "title": "基本知識",
   "lang": "zH",
-  "description": "vue 常見面試題目",
-  "meta": [{"name":"Vue Common Sense", "content":"vue 常見面試題目"}],
+  "description": "此篇主要介紹 vue 常見的面試題目與基本觀念",
+  "meta": [{"name":"keywords", "content":"vue 常見面試題目, vue"}],
   "tags": ['Vue']
 }
 ---

@@ -2,12 +2,10 @@
 {
   "title": "0020 - Valid Parentheses",
   "lang": "zH",
-  "description": "leetcode Valid Parentheses",
+  "description": "leetcode Valid Parentheses js answer",
   "meta": [
-            {"name":"Valid Parentheses", "content":"Valid Parentheses"},
-            {"name":"Valid Parentheses javascript", "content":"Valid Parentheses javascript"},
-            {"name":"leetcode Valid Parentheses", "content":"leetcode Valid Parentheses"}
-            ],
+            {"name":"keywords", "content":"leetcode Valid Parentheses js answer,Valid Parentheses"},
+          ],
   "tags": ['leetcode']
 }
 ---

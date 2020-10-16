@@ -2,8 +2,8 @@
 {
   "title": "Box-Model",
   "lang": "zH",
-  "description": "Box-Model",
-  "meta": [{"name":"CSS Box-Model", "content":"css Box-Model 的使用"}],
+  "description": "此篇會介紹 Box-Model 的語法以及常用方式",
+  "meta": [{"name":"keywords", "content":"css Box-Model 的使用, css, css3, css box-model"}],
   "tags": ['CSS']
 }
 ---

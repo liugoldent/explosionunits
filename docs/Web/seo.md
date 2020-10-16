@@ -51,11 +51,13 @@
 3. 65-80個中文字
 
 ## Meta
-### 一、meta keyword
-1. 主要用於解釋某個網頁的額外資訊，提供引擎參考
-
-### 二、meta description
-1. 對內容的簡述，常見於網站或頁面的介紹。建議加上「主要關鍵字」
+* 對內容的簡述，常見於網站或頁面的介紹。建議加上「主要關鍵字」
+####  meta name="description" content="放上網站或服務的一些描述(這個在google search結束後，會顯示在google上)"
+####  meta name="keywords" content="可放入一些關鍵字"
+####  meta name="author" content="放上出版者的資訊"
+####  meta name="generator" content="編輯器名稱"
+####  meta name="copyright" content="版權歸屬"
+####  meta name="distribution" content="發佈所在地區"
 
 ## HTML-Tag
 ### 一、優先權重
@@ -75,3 +77,6 @@
   "tags": ['資料結構']
 }
 ```
+
+## 參考資料
+[HTML裡極為重要的一個標籤 META TAG 你我皆不可忽視](https://www.maya.com.tw/blog_detail.php?idn=35)

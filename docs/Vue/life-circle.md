@@ -2,8 +2,8 @@
 {
   "title": "Life Circle",
   "lang": "zH",
-  "description": "Life Circle 生命週期",
-  "meta": [{"name":"Life Circle", "content":"Vue生命週期"}],
+  "description": "此篇主要介紹 vue 的 Life Circle 生命週期",
+  "meta": [{"name":"keywords", "content":"Vue生命週期, vue life circle. vue"}],
   "tags": ['Vue']
 }
 ---
@@ -25,7 +25,7 @@
 ### 3. beforeMount（渲染DOM前）
 - 在資料掛載前被調用：相關的render function首次被調用。
 - 該hook在server side render期間不被調用
-- data & $el 均已存在，但DOM為virtual DOM 仍尚未被加載。eg: <p> {{ message }} </p>
+- data & $el 均已存在，但DOM為virtual DOM 仍尚未被加載。eg: `<p> { message } </p>`
 - **應用：vue掛載的根點已經建立，可以圍繞這個根元素進行一些操作**
   
 ### 4. mounted（渲染DOM後）

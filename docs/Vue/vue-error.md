@@ -2,8 +2,13 @@
 {
   "title": "Vue 常見錯誤",
   "lang": "zH",
-  "description": "Vue 常見錯誤",
-  "meta": [{"name":"Vue 常見錯誤", "content":"Vue 常見錯誤"}],
+  "description": "了解Do not mutate vuex store state outside mutation handler,
+                    TypeError: Right-hand side of 'instanceof' is not an object,
+                    Vue Error: Avoid Mutating a Prop Directly的錯誤原因與改進",
+  "meta": [
+  {"name":"keywords", "content":"vuex warn, vue props warn"},
+  {"name":"author", "content":"Guan Ting Liu"},
+  ],
   "tags": ['Vue']
 }
 ---
@@ -24,7 +29,7 @@ function getA(){
     })
 }
 
-// 正確做法
+// 正確做法為下方
 
 function getA(){
     let la_groupA = JSON.parse(JSON.stringify(this.$store.state.la_groupA))
@@ -54,7 +59,9 @@ props:{
         type: ['String', 'Number']
     }
 }
-// to
+
+// 正確做法為下方
+
 props:{
     value: {
     // 這樣給props兩種型別才是對的
@@ -80,7 +87,8 @@ export default {
     }
 }
 
-// 更正方式
+// 正確做法為下方
+
 export default {
     props: {
         movies: {

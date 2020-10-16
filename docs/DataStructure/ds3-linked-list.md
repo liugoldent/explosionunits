@@ -3,7 +3,7 @@
   "title": "Linked List 鏈結串列",
   "lang": "zH",
   "description": "鏈結串列",
-  "meta": [{"name":"Linked List", "content":"鏈結串列"}],
+  "meta": [{"name":"keywords", "content":"鏈結串列, linked-list,DataStructure,JavaScript DataStructure"}],
   "tags": ['資料結構']
 }
 ---

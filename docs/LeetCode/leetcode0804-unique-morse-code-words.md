@@ -2,12 +2,10 @@
 {
   "title": "0804 - Unique Morse Code Words",
   "lang": "zH",
-  "description": "leetcode Unique Morse Code Words",
+  "description": "leetcode Unique Morse Code Words js answer",
   "meta": [
-            {"name":"Unique Morse Code Words", "content":"Unique Morse Code Words"},
-            {"name":"Unique Morse Code Words javascript", "content":"Unique Morse Code Words javascript"},
-            {"name":"leetcode Unique Morse Code Words", "content":"leetcode Unique Morse Code Words"}
-            ],
+            {"name":"keywords", "content":"leetcode Unique Morse Code Words js answer,Unique Morse Code Words"},
+          ],
   "tags": ['leetcode']
 }
 ---

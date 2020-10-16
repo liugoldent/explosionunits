@@ -3,7 +3,7 @@
   "title": "Tree 樹",
   "lang": "zH",
   "description": "在這章主要會講樹的基本術語，以及二元樹和二元搜尋樹",
-  "meta": [{"name":"Tree", "content":"樹"}],
+  "meta": [{"name":"keywords", "content":"樹,tree,DataStructure,JavaScript DataStructure"}],
   "tags": ['資料結構']
 }
 ---

@@ -3,7 +3,7 @@
   "title": "Stack 堆疊",
   "lang": "zH",
   "description": "首先了解堆疊的定義與使用，最後我們用JS去實現堆疊",
-  "meta": [{"name":"Stack", "content":"堆疊"}],
+  "meta": [{"name":"keywords", "content":"stack,堆疊,DataStructure,JavaScript DataStructure"}],
   "tags": ['資料結構']
 }
 ---

@@ -3,7 +3,7 @@
   "title": "HashMap 雜湊表",
   "lang": "zH",
   "description": "介紹資料結構中，雜湊表的使用",
-  "meta": [{"name":"hashmap", "content":"雜湊表"},{"name":"hashTable", "content":"雜湊表"}],
+  "meta": [{"name":"keywords", "content":"雜湊表,hashmap,DataStructure,JavaScript DataStructure"}],
   "tags": ['資料結構']
 }
 ---

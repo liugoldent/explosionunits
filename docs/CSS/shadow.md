@@ -2,8 +2,8 @@
 {
   "title": "Shadow 陰影",
   "lang": "zH",
-  "description": "CSS Shadow 陰影",
-  "meta": [{"name":"CSS Shadow 陰影", "content":"css Shadow 陰影"}],
+  "description": "此篇會介紹 CSS Shadow 陰影的語法以及常用方式",
+  "meta": [{"name":"keywords", "content":"css Shadow 陰影, css, css3, css shadow"}],
   "tags": ['CSS']
 }
 ---

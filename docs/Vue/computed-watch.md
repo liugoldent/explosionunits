@@ -2,8 +2,8 @@
 {
   "title": "Computed & Watch",
   "lang": "zH",
-  "description": "Computed 與 Watch 的使用與差別",
-  "meta": [{"name":"Computed & Watch", "content":"Computed 與 Watch 的使用與差別"}],
+  "description": "此篇主要介紹 vue 的 Computed 與 Watch 的使用與差別",
+  "meta": [{"name":"keywords", "content":"Computed 與 Watch 的使用與差別, vue computed, vue watch, vuejs"}],
   "tags": ['Vue']
 }
 ---

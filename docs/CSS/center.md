@@ -2,8 +2,8 @@
 {
   "title": "置中方法",
   "lang": "zH",
-  "description": "CSS 置中方法",
-  "meta": [{"name":"CSS 置中方法", "content":"css 置中方法"}],
+  "description": "此篇會介紹 CSS 置中方法",
+  "meta": [{"name":"keywords", "content":"css 置中方法, css, css3, css center"}],
   "tags": ['CSS']
 }
 ---

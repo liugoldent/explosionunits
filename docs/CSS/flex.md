@@ -3,7 +3,7 @@
   "title": "Flex",
   "lang": "zH",
   "description": "CSS Flex",
-  "meta": [{"name":"CSS Flex", "content":"css Flex"}],
+  "meta": [{"name":"CSS Flex", "content":"css Flex, css, css3, css flex"}],
   "tags": ['CSS']
 }
 ---

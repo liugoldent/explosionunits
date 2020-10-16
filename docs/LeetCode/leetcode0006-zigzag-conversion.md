@@ -2,12 +2,10 @@
 {
   "title": "0006 - ZigZag Conversion",
   "lang": "zH",
-  "description": "leetcode ZigZag Conversion",
+  "description": "leetcode ZigZag Conversion js answer",
   "meta": [
-            {"name":"ZigZag Conversion", "content":"ZigZag Conversion"},
-            {"name":"ZigZag Conversion javascript", "content":"ZigZag Conversion javascript"},
-            {"name":"leetcode ZigZag Conversion", "content":"leetcode ZigZag Conversion"}
-            ],
+            {"name":"keywords", "content":"leetcode ZigZag Conversion js answer,ZigZag Conversion"}
+          ],
   "tags": ['leetcode']
 }
 ---

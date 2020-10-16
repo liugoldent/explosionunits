@@ -2,12 +2,10 @@
 {
   "title": "0035 - Search Insert Position",
   "lang": "zH",
-  "description": "leetcode Search Insert Position",
+  "description": "leetcode Search Insert Position js answer",
   "meta": [
-            {"name":"Search Insert Position", "content":"Search Insert Position"},
-            {"name":"Search Insert Position javascript", "content":"Search Insert Position javascript"},
-            {"name":"leetcode Search Insert Position", "content":"leetcode Search Insert Position"}
-            ],
+            {"name":"keywords", "content":"leetcode Search Insert Position js answer,Search Insert Position"},
+          ],
   "tags": ['leetcode']
 }
 ---

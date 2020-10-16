@@ -2,8 +2,8 @@
 {
   "title": "Grid",
   "lang": "zH",
-  "description": "CSS Grid",
-  "meta": [{"name":"CSS Grid", "content":"css Grid"}],
+  "description": "此篇會介紹 CSS Grid 的語法以及常用方式",
+  "meta": [{"name":"keywords", "content":"css Grid, css, css3, css grid"}],
   "tags": ['CSS']
 }
 ---

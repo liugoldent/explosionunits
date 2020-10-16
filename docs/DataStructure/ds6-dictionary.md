@@ -3,7 +3,7 @@
   "title": "Dictionary 字典",
   "lang": "zH",
   "description": "介紹資料結構中，字典的使用",
-  "meta": [{"name":"dictionary", "content":"字典"}],
+  "meta": [{"name":"keywords", "content":"字典,dictionary,DataStructure,JavaScript DataStructure"}],
   "tags": ['資料結構']
 }
 ---

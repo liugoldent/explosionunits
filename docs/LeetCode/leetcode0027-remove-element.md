@@ -2,12 +2,10 @@
 {
   "title": "0027 - Remove Element",
   "lang": "zH",
-  "description": "leetcode Remove Element",
+  "description": "leetcode Remove Element js answer",
   "meta": [
-            {"name":"Remove Element", "content":"Remove Element"},
-            {"name":"Remove Element javascript", "content":"Remove Element javascript"},
-            {"name":"leetcode Remove Element", "content":"leetcode Remove Element"}
-            ],
+            {"name":"keywords", "content":"leetcode Remove Element js answer,Remove Element"},
+          ],
   "tags": ['leetcode']
 }
 ---

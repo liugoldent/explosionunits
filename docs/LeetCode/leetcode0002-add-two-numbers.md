@@ -2,12 +2,8 @@
 {
   "title": "0002 - Add Two Numbers",
   "lang": "zH",
-  "description": "leetcode Add Two Numbers",
-  "meta": [
-            {"name":"Add Two Numbers", "content":"Add Two Numbers"},
-            {"name":"Add Two Numbers javascript", "content":"Add Two Numbers javascript"},
-            {"name":"leetcode Add Two Numbers", "content":"leetcode Add Two Numbers"}
-            ],
+  "description": "leetcode Add Two Numbers js answer",
+  "meta": [{"name":"keywords", "content":"leetcode Add Two Numbers js answer, Add Two Numbers"}],
   "tags": ['leetcode']
 }
 ---

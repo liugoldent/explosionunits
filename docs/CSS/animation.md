@@ -2,8 +2,8 @@
 {
   "title": "Animation 動畫",
   "lang": "zH",
-  "description": "Animation 動畫",
-  "meta": [{"name":"CSS Animation", "content":"css Animation 動畫 的使用"}],
+  "description": "此篇會介紹 CSS Animation 動畫的語法以及常用方式",
+  "meta": [{"name":"keywords", "content":"css Animation, css, css3, css animation"}],
   "tags": ['CSS']
 }
 ---
