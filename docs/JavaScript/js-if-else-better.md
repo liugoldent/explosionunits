@@ -14,7 +14,7 @@
 ## example1
 ### worse-1. if...else if 的寫法
 ```javascript
-function ClickFunc(atatus){
+function ClickFunc(status){
     if(status === 1){
         console.log('星期一')
     }else if(status === 2 ){
@@ -28,7 +28,7 @@ function ClickFunc(atatus){
 ```
 ### worse-2. switch 的寫法
 ```javascript
-function ClickFunc(atatus){
+function ClickFunc(status){
     switch (status){
         case 1:
         console.log('星期一')
@@ -89,7 +89,7 @@ const ClickFunc = (status_cod)=> {
 ## example2
 現在除了status外，我們再增加個條件：country
 ```javascript
-function ClickFunc(atatus, country){
+function ClickFunc(status, country){
     if(country === 'US'){
         if(status === 1){
             console.log('MON')
@@ -132,7 +132,7 @@ const actions = new Map([
     ['default', ()=>{/*do sth*/}],
 ])
 
-const ClickFunc = (atatus, country) =>{
+const ClickFunc = (status, country) =>{
     let lf_action = actions.get(`${country}_${status}`) || actions.get('default')
     lf_action.call(this)
 }
