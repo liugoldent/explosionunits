@@ -2,7 +2,7 @@
 {
   "title": "JS 複雜判斷的更優雅寫法",
   "lang": "zH",
-  "description": "在這篇，我們去改寫複雜if-else的判斷是",
+  "description": "在這篇，我們去改寫複雜if-else的判斷式",
   "meta": [{"name":"keywords", "content":"js if-else, refactor"}],
   "tags": ['JavaScript'],
   "sidebarDepth": "2"
