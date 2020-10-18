@@ -421,3 +421,4 @@ setImmediate
 ## 參考資料
 [Promise 原理讲解 && 实现一个 Promise 对象](https://juejin.im/post/5aa7868b6fb9a028dd4de672)
 [Promise 必知必会](https://juejin.im/post/6844903509934997511)
+[JS 原力覺醒 Day15 - Macrotask 與 MicroTask](https://ithelp.ithome.com.tw/articles/10222737)
