@@ -1,6 +1,6 @@
 ---
 {
-  "title": "slot",
+  "title": "Vue slot",
   "lang": "zH",
   "description": "此篇主要介紹 vue 的slot（插槽）如何使用與有哪些種類",
   "meta": [{"name":"keywords", "content":"vue中slot插槽介紹與使用, vue slot , vue"}],
