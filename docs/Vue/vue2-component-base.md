@@ -6,7 +6,6 @@
   "meta": [{"name":"keywords", "content":"vue component, vue, component base"}],
   "tags": ['Vue'],
   "sidebarDepth": "2"
-
 }
 ---
 
