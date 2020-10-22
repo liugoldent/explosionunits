@@ -1,6 +1,6 @@
 ---
 {
-  "title": "了解組件part2",
+  "title": "了解組件 ch2",
   "lang": "zH",
   "description": "此篇主要介紹 vue 組件的基本概念",
   "meta": [{"name":"keywords", "content":"vue component, vue, component base"}],
@@ -8,7 +8,7 @@
   "sidebarDepth": "2"
 }
 ---
-# 了解組件part2
+# 了解組件 ch2
 
 ## 動態組件&非同步組件
 ### keep-alive

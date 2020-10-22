@@ -1,6 +1,6 @@
 ---
 {
-  "title": "了解組件",
+  "title": "了解組件 ch1",
   "lang": "zH",
   "description": "此篇主要介紹 vue 組件的基本概念",
   "meta": [{"name":"keywords", "content":"vue component, vue, component base"}],
@@ -9,7 +9,7 @@
 }
 ---
 
-# 了解組件
+# 了解組件 ch1
 
 ## 組件註冊
 ### 註冊組件的名字
