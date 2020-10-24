@@ -9,6 +9,7 @@
 }
 ---
 # JS 複雜判斷的更優雅寫法
+![if-else](https://miro.medium.com/max/1400/1*szBDTGBhwSyToXwcGiyIMA.png)
 常常有這種狀況：在商業邏輯的日益複雜下，if/else或switch太多，會造成看code越來越不懂，而如何更優雅地寫出判斷邏輯，為此篇重點
 
 ## example1

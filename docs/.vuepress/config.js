@@ -48,7 +48,8 @@ module.exports = {
       '/NodeAndNpm/':getSideBar('NodeAndNpm','NodeAndNpm'),
       '/Web/':getSideBar('Web','Web'),
       '/DataStructure/':getSideBar('DataStructure','DataStructure'),
-      '/D3/':getSideBar('D3','D3')
+      '/D3/':getSideBar('D3','D3'),
+      '/DesignPattern/':getSideBar('DesignPattern','DesignPattern'),
     },
     lastUpdated: 'Last Updated', // string | boolean
     smoothScroll: true,

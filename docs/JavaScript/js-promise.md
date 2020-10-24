@@ -9,6 +9,7 @@
 }
 ---
 # JS Promise
+![Promise](https://miro.medium.com/max/1400/1*9CzLeJ6fDL2tMSo0NWe1iQ.jpeg)
 :::tip
 1. promise 為一個非同步的解決方案
 2. promise 是一個對象，它可以獲得非同步操作的信息

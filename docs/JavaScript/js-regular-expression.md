@@ -9,7 +9,7 @@
 }
 ---
 # JS 正規表達式-Regular Expression
-
+![JS 正規表達式-Regular Expression](https://miro.medium.com/max/1400/1*c_P8VG9IHFMnZootac08Zw.jpeg)
 ## 基本理論：出現次數
 * `*`：字串出現次數0次或更多
 * `+`：字串出現次數1次或更多

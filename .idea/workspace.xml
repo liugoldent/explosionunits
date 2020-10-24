@@ -2,8 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa9e673d-bd64-423d-be33-f1e6e2ee2da9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/DesignPattern/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/DesignPattern/dp1-introduce.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/JavaScript/js-ajax.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Vue/vue-normal-communication.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Vue/vue-normal-communication.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/JavaScript/js-if-else-better.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/JavaScript/js-if-else-better.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/JavaScript/js-promise.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/JavaScript/js-promise.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/JavaScript/js-regular-expression.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/JavaScript/js-regular-expression.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/.temp/app-enhancers/global-components-10.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/.temp/internal/app-enhancers.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/.temp/internal/app-enhancers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/.temp/internal/page-components.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/.temp/internal/page-components.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/.temp/internal/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/.temp/internal/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/.temp/internal/siteData.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/.temp/internal/siteData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/01e4a7dae6b46380e3253c4376a62be2.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/01e4a7dae6b46380e3253c4376a62be2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/08c87c46fd19202c37b0c3e144327094.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/08c87c46fd19202c37b0c3e144327094.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/19d36ea0ebaab87d125480e41842b634.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/19d36ea0ebaab87d125480e41842b634.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/297031d27aa9ed9f0b01c0755e6aad67.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/297031d27aa9ed9f0b01c0755e6aad67.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/2c67d35272c5a03a8ba26127a2f1b60b.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/2c67d35272c5a03a8ba26127a2f1b60b.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/328b625d7d14cc763d82e062ca46dfcd.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/328b625d7d14cc763d82e062ca46dfcd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/339f7de7af8e03417c4bc9307aef5983.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/339f7de7af8e03417c4bc9307aef5983.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/397152638ef23cca264c65585900f869.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/397152638ef23cca264c65585900f869.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/49983744c098fceed4c9682251004fca.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/49983744c098fceed4c9682251004fca.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/578f6ab1963060b378d27a072f68b6bd.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/578f6ab1963060b378d27a072f68b6bd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/60b1fcda5b483af6f0bc837bac89afea.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/60b1fcda5b483af6f0bc837bac89afea.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/66515dafe4d8f55f623a5409306f3516.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/66515dafe4d8f55f623a5409306f3516.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/679be623c126b226583d590312d65c6e.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/679be623c126b226583d590312d65c6e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/6c9a76f03735f65046859509b4340909.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/6c9a76f03735f65046859509b4340909.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/758bb6e51a77502dad1d0c920748fa9f.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/758bb6e51a77502dad1d0c920748fa9f.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/8dcdf140ee20519c4c85ff2dd5b5f908.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/8dcdf140ee20519c4c85ff2dd5b5f908.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/b0a5abf1ab87aeeedb6dcc6220cdfe7a.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/b0a5abf1ab87aeeedb6dcc6220cdfe7a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/b7c00306d8b390fdc2b3dfb29ec88f94.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/b7c00306d8b390fdc2b3dfb29ec88f94.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/b8d55f756075a15c164f9f69629a594c.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/b8d55f756075a15c164f9f69629a594c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/c4fe20f8377b80dac5f4d558b3023609.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/c4fe20f8377b80dac5f4d558b3023609.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/cb188d967d15e085b8c6340ce0f66081.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/cb188d967d15e085b8c6340ce0f66081.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/db4831e247364fa2541f33e90ea2cf5a.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/db4831e247364fa2541f33e90ea2cf5a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/e455f2bee8c39c65c1e6eeb8d9fe94d6.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/e455f2bee8c39c65c1e6eeb8d9fe94d6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/ee7a39ef550472a9692581b52eb038da.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/ee7a39ef550472a9692581b52eb038da.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/ef097e5912cea6de0197be7ac8e93de2.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/ef097e5912cea6de0197be7ac8e93de2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/f09802f063ff5cead2a9b0e9dcbd0f97.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/f09802f063ff5cead2a9b0e9dcbd0f97.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/f4927bbbb8e5b884fa6c8bb0d686d5fc.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/f4927bbbb8e5b884fa6c8bb0d686d5fc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/fe90c1528615f1ba3da4df2c654cb82a.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vuepress/core/node_modules/.cache/vuepress/fe90c1528615f1ba3da4df2c654cb82a.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +114,7 @@
       <workItem from="1603205629086" duration="238000" />
       <workItem from="1603206277775" duration="7000" />
       <workItem from="1603283938631" duration="7949000" />
-      <workItem from="1603461741693" duration="5634000" />
+      <workItem from="1603461741693" duration="7880000" />
     </task>
     <servers />
   </component>
@@ -107,10 +147,10 @@
       <screen x="0" y="23" width="1920" height="992" />
     </state>
     <state x="714" y="157" key="git4idea.branch.GitSmartOperationDialog/0.23.1920.992/-1920.23.1920.1057@0.23.1920.992" timestamp="1598711496853" />
-    <state x="613" y="227" width="672" height="637" key="search.everywhere.popup" timestamp="1603465627660">
+    <state x="613" y="227" width="672" height="637" key="search.everywhere.popup" timestamp="1603527603067">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
     <state x="613" y="240" width="672" height="678" key="search.everywhere.popup/0.23.1920.1057/-1920.23.1920.992@0.23.1920.1057" timestamp="1603026872436" />
-    <state x="613" y="227" width="672" height="637" key="search.everywhere.popup/0.23.1920.992/-1920.23.1920.1057@0.23.1920.992" timestamp="1603465627660" />
+    <state x="613" y="227" width="672" height="637" key="search.everywhere.popup/0.23.1920.992/-1920.23.1920.1057@0.23.1920.992" timestamp="1603527603067" />
   </component>
 </project>

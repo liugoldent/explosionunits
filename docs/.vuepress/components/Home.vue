@@ -72,6 +72,13 @@
             <img src="https://picsum.photos/300/300?random=8">
           </div>
         </router-link>
+
+        <router-link to="/DesignPattern">
+          <div class="routerinner">
+            <p>Pattern</p>
+            <img src="https://picsum.photos/300/300?random=9">
+          </div>
+        </router-link>
       </div>
   </div>
 </template>
