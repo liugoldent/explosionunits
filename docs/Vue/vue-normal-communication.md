@@ -9,7 +9,7 @@
 ---
 
 # Vue 組件通訊方式
-
+![Vue 組件通訊方式](https://miro.medium.com/max/1400/1*WemWCPx0uYnAj6ohcbQeig.jpeg)
 ## Props
 ```
 components
