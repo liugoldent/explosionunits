@@ -16,7 +16,6 @@ function getSideBar(folder, title) {
   return ["", ...files];
 }
 module.exports = {
-  theme: 'vuepress-theme-vdoing',
   title: 'Explosion Units',
   head:[
     ['link',{
