@@ -8,6 +8,7 @@
   "sidebarDepth": "2"
 }
 ---
+# 關於AJAX與那些前端的request方法
 ![AJAX](https://miro.medium.com/max/1400/1*n2NLoddl8yzr8usaOk8juA.jpeg)
 ::: tip
 關於AJAX：Asynchronous JavaScript And XML。重點在於Asynchronous非同步的這個單字。
@@ -156,6 +157,6 @@ axios.all([getUserAcoount(),getUsePromise()])
 * 自動轉換JSON數據
 * 客戶端支持防禦XSRF（原理是將你的每個請求都帶一個從Cookie拿到的key，並且根據同源政策，假冒的網站無法拿到你cookie的key，因此後台即可判斷）
 
-## 參考文章：
+## 參考文章
 * [Ajax, jQuery, ajax, axios和fetch介紹、區別以及優缺點](https://www.twblogs.net/a/5d5f0b8ebd9eee5327fde290)
 * [前端request的幾種方法](https://medium.com/dot-js/%E7%94%B1%E5%89%8D%E7%AB%AFrequest-%E7%9A%84%E5%B9%BE%E7%A8%AE%E6%96%B9%E6%B3%95-fbf8a0b4023a)

@@ -3,7 +3,7 @@
   "title": "過渡 & 動畫 ch1",
   "lang": "zH",
   "description": "此篇主要介紹 vue 組件的進入/離開/列表過渡",
-  "meta": [{"name":"keywords", "content":"vue component, vue, vue transition"}],
+  "meta": [{"name":"keywords", "content":"vue component, vue, vue transition, vue animation"}],
   "tags": ['Vue'],
   "sidebarDepth": "2"
 }

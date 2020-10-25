@@ -12,7 +12,6 @@ function getSideBar(folder, title) {
         fs.statSync(path.join(`${__dirname}/../${folder}`, item)).isFile() &&
         extension.includes(path.extname(item))
     );
-
   return ["", ...files];
 }
 module.exports = {
