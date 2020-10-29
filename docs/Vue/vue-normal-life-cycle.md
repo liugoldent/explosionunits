@@ -1,9 +1,9 @@
 ---
 {
-  "title": "Vue Life Circle",
+  "title": "Vue Life Cycle",
   "lang": "zH",
-  "description": "此篇主要介紹 vue 的 Life Circle 生命週期",
-  "meta": [{"name":"keywords", "content":"Vue生命週期, vue life circle. vue"}],
+  "description": "此篇主要介紹 vue 的 Life Cycle 生命週期",
+  "meta": [{"name":"keywords", "content":"Vue生命週期, vue life cycle. vue"}],
   "tags": ['Vue']
 }
 ---
