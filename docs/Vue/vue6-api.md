@@ -150,6 +150,23 @@ const Demo = {
   }
 }
 ```
+* 結合 provide來使用
+```javascript
+// A組件
+provide() {
+  this.theme = Vue.observable({
+    color: "blue"
+  });
+ return {
+    theme: this.theme
+  }
+ },
+```
+```javascript
+// B組件
+  inject: ['theme']
+```
+
 ## Vue.version
 提供字串形式的Vue安裝版本號，我們可以根據不同的版本號採用不同的策略
 ```javascript
