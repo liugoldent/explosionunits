@@ -79,6 +79,13 @@
             <img src="https://picsum.photos/300/300?random=9">
           </div>
         </router-link>
+
+        <router-link to="/TypeScript">
+          <div class="routerinner">
+            <p>TypeScript</p>
+            <img src="https://picsum.photos/300/300?random=10">
+          </div>
+        </router-link>
       </div>
   </div>
 </template>

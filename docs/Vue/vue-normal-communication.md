@@ -60,8 +60,7 @@ components
    ├── Son1.vue     // 兒子
 ```
 #### 子組件：經由發送$emit事件
-```html
-
+```vue
 <template>
   <div>
     <div>兒子:{{date}}</div>
