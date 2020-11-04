@@ -4,7 +4,8 @@
   "lang": "zH",
   "description": "此篇主要介紹 vue 的 Computed 與 Watch 的使用與差別",
   "meta": [{"name":"keywords", "content":"Computed 與 Watch 的使用與差別, vue computed, vue watch, vuejs"}],
-  "tags": ['Vue']
+  "tags": ['Vue'],
+  "sidebarDepth": "3",
 }
 ---
 # Computed & Watch
@@ -185,3 +186,31 @@ const unWatch = app.$watch('text',(nval,oval) => {
 })
 unwatch() // 手動註銷unwatch
 ```
+
+## 比較區別 
+
+### computed特性
+1. computed 內部的函數在調用時不加()
+2. computed是依賴vm中data的屬性變化而變化的，也就是說當data中的屬性發生改變時，當前函數才會執行，data沒改變時，computed不會執行
+3. computed中的必須用return 返回
+4. 請勿在computed中對data內的屬性做賦值，因為這樣會死循環
+5. 如果computed中的依賴屬性沒有變化，那麼調用此computed函數時，會從緩存中讀取
+#### 使用場景：當一個值受多個屬性影響時
+
+### watch
+1. watch的function名稱必須要和data中的屬性名相同，因為watch是依賴data中的屬性，當data改變時，watch就執行
+2. watch這function有兩個參數：newVal / oldVal
+3. wathc的函數是不需要被調用的
+4. watch只會監控數據的值是否改變，不會去監控數據的地址是否改變，意思是要深度監控必須要
+```javascript
+watch:{
+    // 假設"obj"是data內的某個屬性，深度監控某一個key值可以這樣寫
+    "obj.a":{
+        handler(nval,oval){
+        
+        }
+    }
+}
+```
+5. watch的immediate屬性，用於頁面第一次加載時做一次監控
+6. 特殊情況下，vue無法監測到陣列的變化，所以你必須要使用splice()這種方法，才可以讓vue知道資料有變化
