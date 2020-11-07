@@ -50,6 +50,7 @@ module.exports = {
       '/D3/':getSideBar('D3','D3'),
       '/DesignPattern/':getSideBar('DesignPattern','DesignPattern'),
       '/TypeScript/':getSideBar('TypeScript','TypeScript'),
+      '/other/':getSideBar('other','other'),
     },
     lastUpdated: 'Last Updated', // string | boolean
     smoothScroll: true,
