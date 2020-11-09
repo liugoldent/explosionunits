@@ -121,7 +121,7 @@ var example1 = new Vue({
 ```
 ```javascript
 let object = {
-    title: 'How to do lists in Vue',
+    title: 'How to do lists in Vue2',
     author: 'Jane Doe',
     publishedAt: '2016-04-10'
 }

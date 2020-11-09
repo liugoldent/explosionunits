@@ -54,7 +54,7 @@ export function initUse (Vue: GlobalAPI) {
     }
 
     // toArray(arguments, 1)的功能為，獲取Vue.use(plugin,xx,xx)中的其他参数。
-    // 比如 Vue.use(plugin,{size:'mini', theme:'black'})，就會回去到plugin意外的参数
+    // 比如 Vue2.use(plugin,{size:'mini', theme:'black'})，就會回去到plugin意外的参数
     const args = toArray(arguments, 1)
     // 在参数中第一位插入Vue，從而保證第一个参数是Vue instance
     args.unshift(this)

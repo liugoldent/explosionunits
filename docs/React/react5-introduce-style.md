@@ -394,7 +394,7 @@ const frontEndFrameworks = [
   'Ember',
   'Knockout',
   'Backbone',
-  'Vue'
+  'Vue2'
 ];
 
 function Frameworks() {

@@ -1,6 +1,6 @@
 ---
 {
-  "title": "2. Strategy模式",
+  "title": "Strategy模式",
   "lang": "zH",
   "description": "在這篇，主要先介紹策略模式的使用與解決什麼問題",
   "meta": [{"name":"keywords", "content":"Design Pattern, strategy pattern,策略模式"}],

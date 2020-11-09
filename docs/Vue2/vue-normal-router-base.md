@@ -4,7 +4,8 @@
   "lang": "zH",
   "description": "此篇主要介紹 vue 的 router",
   "meta": [{"name":"keywords", "content":"Vue router使用, vue-router"}],
-  "tags": ['Vue']
+  "tags": ['Vue'],
+  "sidebarDepth": "2"
 }
 ---
 # Vue router (基礎篇)
@@ -43,8 +44,8 @@
 #### 基本設定
 ```javascript
 // 在router中的index.js
-import Vue from 'Vue'
-import Router from 'docs/Vue/vue-router-base'
+import Vue from 'Vue2'
+import Router from 'docs/Vue2/vue-normal-router-base'
 import Home from '@/pages/Home'
 
 Vue.use(Router)
@@ -56,17 +57,22 @@ let routes = [
     component: Home // 對應的組件
   },
   {
-    path: '/user/:username', //動態路由設定,代表不管username怎麼變,都會到同一個component
+    path: '/user/:username', // 動態路由設定,代表不管username怎麼變,都會到同一個component
+    // 所以像 /user/foo || /user/bar 都會連到同樣的component
     component: () => import('../pages/User1') // 對應的component
   }
 ]
 ```
 
-#### 響應路由參數的變化
+#### 在vue中使用
+透過params給路由一個物件
+```vue
+<router-link :to="{ name: 'user', params: { username: 123 }}">User</router-link>
+```
 
+#### 響應路由參數的變化
 當我們使用動態路由時,從/user/foo to /user/bar 時,原來的組件也會復用。
 因為兩個路由都渲染同個組件,比起銷毀再創建,效能更為高。但同時也代表著組件的生命週期不會再被調用
-
 ```javascript
 // 監測$route物件
 const User = {
@@ -85,6 +91,13 @@ const Users = {
   beforeRouteUpdate(to, from, next) {}
 }
 ```
+
+#### 多段參數
+基本上我們可以使用`this.$route.params` 來取得參數
+| 模式 | 匹配路徑 | $route.params |
+| --- | --- | --- |
+| /user/:username | /user/even | `{username: 'even'}` |
+| /user/:username/post/:post_id | /user/even/post/123 | `{username: 'even', post_id: '123' }` |
 
 ### 2. 嵌套路由(巢狀路由)
 
@@ -216,7 +229,7 @@ let routes = [
 
 ### push (會在使用者的 history 上增加一個新紀錄)
 
-| 聲名式              |     Code      |
+| 聲名式               |     Code      |
 | ------------------- | :-----------: |
 | <router-link :to= > | router.push() |
 
@@ -245,6 +258,62 @@ router.replace(location, onComplete?, onAbort?)
 // router.go(n) > n 為整數
 this.$router.go(-1) // 倒回一頁
 this.$router.go(1) // 向未來一頁
+```
+
+## 捕獲 404 頁面或所有路由
+```javascript
+{
+  // 會匹配所有路徑
+  path: '*'
+}
+{
+  // 會匹配以 `/user-` 開頭的任意路径
+  path: '/user-*'
+}
+
+```
+
+## HTML5 History 模式
+### 介紹
+`vue-router`默認hash模式：使用URL hash 來模擬一個完整的URL，於是當URL改變時，頁面不重複加載
+如果不想要很醜的hash，我們可以用路由的history模式，這種模式充分利用 `history.pushState` API 來完成URL 跳轉，而無需重新加載頁面
+```
+// hash 模式
+https://localhost#home
+
+// history 模式
+https://localhost/home
+```
+### 如何使用
+```javascript
+const router = new VueRouter({
+  mode: 'history',
+  routes: [...]
+})
+```
+
+### 後端的配合
+```javascript
+const http = require('http')
+const fs = require('fs')
+const httpPort = 80
+
+http.createServer((req, res) => {
+  fs.readFile('index.html', 'utf-8', (err, content) => {
+    if (err) {
+      console.log('We cannot open "index.htm" file.')
+    }
+
+    res.writeHead(200, {
+      'Content-Type': 'text/html; charset=utf-8'
+    })
+
+    res.end(content)
+  })
+}).listen(httpPort, () => {
+  console.log('Server listening on: http://localhost:%s', httpPort)
+})
+
 ```
 
 ## Router Hook（路由鉤子）

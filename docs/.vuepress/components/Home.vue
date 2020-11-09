@@ -13,9 +13,9 @@
           </div>
         </router-link>
 
-        <router-link to="/Vue">
+        <router-link to="/Vue2">
         <div class="routerinner">
-          <p>Vue</p>
+          <p>Vue2</p>
           <img src="https://picsum.photos/300/300?random=1">
         </div>
         </router-link>
@@ -84,6 +84,13 @@
           <div class="routerinner">
             <p>TypeScript</p>
             <img src="https://picsum.photos/300/300?random=10">
+          </div>
+        </router-link>
+
+        <router-link to="/Vue3">
+          <div class="routerinner">
+            <p>Vue3</p>
+            <img src="https://picsum.photos/300/300?random=11">
           </div>
         </router-link>
       </div>

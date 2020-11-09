@@ -543,6 +543,84 @@ export default {
 在另一個組件中，利用$on接收事件
 :::
 
+## provide/inject
+允許一個祖先組件將其所有子孫後代注入一個依賴，不論組件層次有多深。<br>
+意味著：祖先透過provider來提供變量，然後在子組件中通過inject來取得（注入）變量
+### provide 為物件
+```javascript
+// slot1 組件
+export default {
+  name: 'Home',
+  provide:{
+    name: '浪裡'
+  },
+  components: {
+    Slot2
+  },
+  data(){
+    return {
+      DefaultFatherData:'DefaultFatherData'
+    }
+  }
+}
+```
+```javascript
+// slot2 組件
+export default {
+  name: 'Home',
+  components: {
+  },
+  inject:['name'], // 這邊inject
+  data(){
+    return {
+      dataInChild:'SendDataFromChild'
+    }
+  },
+  mounted(){
+    console.log(this.name)
+  }
+}
+```
+### provide 為 function
+```javascript
+export default {
+  name: 'Home',
+  provide(){
+    this.theme = Vue.observable({
+      color: 'blue'
+    })
+    return {
+      theme: this.theme
+    }
+  },
+  components: {
+    Slot2
+  },
+  data(){
+    return {
+      DefaultFatherData:'DefaultFatherData'
+    }
+  }
+}
+```
+```javascript
+export default {
+  name: 'Home',
+  components: {
+  },
+  inject:['theme'],
+    // 注意console.log出來的是物件
+    // { color: 'blue' }
+  data(){
+    return {
+      dataInChild:'SendDataFromChild'
+    }
+  },
+  mounted(){
+    console.log(this.theme)
+  }
+}
+```
 ## VueX
 #### 基本上是這是基於全域的共用變數管理
 ![VueX](https://miro.medium.com/max/1400/1*HxfDBqDH1j_pbmMgqWGpew.png)

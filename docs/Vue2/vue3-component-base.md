@@ -66,7 +66,7 @@ new Vue({
 ### 訪問根實例
 #### `this.$root`（不推薦）
 ```javascript
-// Vue 跟實例
+// Vue2 跟實例
 new Vue({
   data: {
     foo: 1

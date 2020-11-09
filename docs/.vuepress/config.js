@@ -40,7 +40,7 @@ module.exports = {
     ],
     sidebar:{
       '/JavaScript/':getSideBar('JavaScript','JavaScript'),
-      '/Vue/':getSideBar('Vue','Vue'),
+      '/Vue2/':getSideBar('Vue2','Vue2'),
       '/LeetCode/':getSideBar('LeetCode','LeetCode'),
       '/CSS/':getSideBar('CSS','CSS'),
       '/React/':getSideBar('React','React'),
@@ -51,6 +51,7 @@ module.exports = {
       '/DesignPattern/':getSideBar('DesignPattern','DesignPattern'),
       '/TypeScript/':getSideBar('TypeScript','TypeScript'),
       '/other/':getSideBar('other','other'),
+      '/Vue3/':getSideBar('Vue3','Vue3'),
     },
     lastUpdated: 'Last Updated', // string | boolean
     smoothScroll: true,

@@ -172,7 +172,7 @@ return createElement('div', {
     },
     
     // 自定義指令。注意，你無法對 `binding` 中的 `oldValue`
-    // 赋值，因为 Vue 已經自動為我們做同步。
+    // 赋值，因为 Vue2 已經自動為我們做同步。
     directives: [
         {
             name: 'my-custom-directive',
