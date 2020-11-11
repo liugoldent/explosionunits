@@ -24,7 +24,7 @@
 * 後進先出的概念
 * 只能在最尾端插入後刪除的線性表
 
-### Callback Queue 
+### Callback Queue or Event Queue 
 * 一種資料結構
 * 先進先出的概念
 * 在結構的前端進行刪除，在結構的後端進行插入
@@ -34,21 +34,21 @@
 在JS中，任務被分為兩種
 * 一種是宏任務（MacroTask）
 * 一種是微任務（MicroTask）
+**不管宏任務or微任務都是進入 Event Queue**
 
 ### MacroTask
 * script 全部代碼
 * setTimeout、setInterval、setImmediate
 * I/O
 * UI Rendeting
+* MessageChannel
+* postMessage
 
 ### MicroTask
 * Process.nextTick（Node.js）
 * Promise
 * Object.observe（廢棄）
 * MutationObserver
-
-## 瀏覽器中的Event Loop
-JS 有一個 `main thread`主線程 & `call-stack`調用執行線。所有的任務都會被放到調用執行線等待主線程執行
 
 ## Promise的思考
 ### 思考等效程式
@@ -69,27 +69,43 @@ function f() {
 }
 ```
 
-### JS 調用線
-JS調用線為後進先出（Stack）的規則，當函數執行時，會被添加到線的頂部，當執行線執行完成後，就會從頂部移出，直到線內被清空
-
-### 同步非同步任務
-* 同步任務會在調用線中按照順序等待主線程依序執行
-* 非同步任務會在非同步任務有結果後，將註冊的回調函數放入任務陣列中等待主線程空閒（調用線被清空時），讀取到線內等待主線程執行
+## JS 調用線怎麼走的
+JS調用執行線為後進先出（Stack）的規則，當函數執行時，會被添加到線的頂部，當調用執行線執行完成後，就會從頂部移出，直到線內被清空
 
 ### Event Loop 進程
-1. 「執行線」執行完同步任務後，會去看執行線是否為空
-2. 如果執行線為空，會去檢查微任務（Callback Queue）是否為空
+1. 「調用執行線」執行完同步任務後，會去看調用執行線是否為空
+2. 如果調用執行線為空，會去檢查微任務是否為空
     * 為空：執行宏任務
-    * 不為空：執行微任務（Callback Queue）
+    * 不為空：執行微任務
 3. 每次單個宏任務執行完畢後，檢查微任務（Callback Queue）隊列是否為空，不為空則依「先入先出」規則做
 4. 設置微任務隊（Callback Queue）為 null，然後執行宏任務，如此循環
 
-### 進入microTask檢查點時，用戶代理會執行以下步驟
+### 進入微任務microTask檢查點時，用戶代理會執行以下步驟
 * 設置 microTask 檢查點標誌為true
 * 當事件循環 microtask 執行不為空時：選擇一個最先進入microtask陣列的 microtask。將事件循環
 microtask設置為以選擇的 microtask，運行此microtask，將已經執行完的microtask為null，移除此microtask
 * 清除 indexDB 事務
 * 設置進入 microtask 檢查點的標誌為 false
+
+## 分析原則
+1. 遇到 `new Promise` 是直接執行其任務
+2. `new Promise` 接的 `then` 是微任務
+3. `await` 會等到 `async` 內的事情都做完才往下做同個`function`內的事情
+4. `await function` 會去驅動這個 function，function 做完，再往同層的同步走下去
+5. 下面這串算同步指令
+```javascript
+await new Promise((res){
+    console.log('1')
+})
+```
+6. `async` 回傳 `Promise` & `async` 中的`return` 會被當作 `resolve value`
+
+## 分析Event Loop
+1. 不同類型的任務會進入到對應的Event Queue
+    * setTimeout or setInterval 會進入宏任務的Event Queue
+    * Promise or process.nextTick會進入微任務的Event Queue
+2. 遇到 `promise.then` 之類的微任務，會讓這個微任務被安排在當前的宏任務中
+3. 當執行完一輪的同步+非同步腳本後，就往下一輪邁進
 
 ## 例子一
 ### code
