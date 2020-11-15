@@ -6,96 +6,54 @@
       </div>
 
       <div class="routerContent">
-        <router-link to="/JavaScript">
-          <div class="routerinner">
-            <p>JavaScript</p>
-            <img src="https://picsum.photos/300/300?random=9">
-          </div>
-        </router-link>
-
-        <router-link to="/Vue2">
-        <div class="routerinner">
-          <p>Vue2</p>
-          <img src="https://picsum.photos/300/300?random=1">
+        <div v-for="(value, index) in list">
+          <router-link :to="value[0]">
+            <div class="routerinner">
+              <p>{{ value[1] }}</p>
+              <img :src="srcFunc(index)">
+            </div>
+          </router-link>
         </div>
-        </router-link>
-
-        <router-link to="/React">
-        <div class="routerinner">
-          <p>React</p>
-          <img src="https://picsum.photos/300/300?random=2">
-        </div>
-        </router-link>
-
-
-        <router-link to="/CSS">
-          <div class="routerinner">
-          <p>CSS</p>
-          <img src="https://picsum.photos/300/300?random=3">
-        </div>
-        </router-link>
-
-
-        <router-link to="/DataStructure">
-          <div class="routerinner">
-          <p>DS</p>
-          <img src="https://picsum.photos/300/300?random=4">
-        </div>
-        </router-link>
-
-
-        <router-link to="/LeetCode">
-          <div class="routerinner">
-            <p>LeetCode</p>
-            <img src="https://picsum.photos/300/300?random=5">
-          </div>
-        </router-link>
-
-
-        <router-link to="/NodeAndNpm">
-          <div class="routerinner">
-            <p>NPM</p>
-            <img src="https://picsum.photos/300/300?random=6">
-          </div>
-        </router-link>
-
-        <router-link to="/Web">
-          <div class="routerinner">
-            <p>Web</p>
-            <img src="https://picsum.photos/300/300?random=7">
-          </div>
-        </router-link>
-
-        <router-link to="/D3">
-          <div class="routerinner">
-            <p>D3</p>
-            <img src="https://picsum.photos/300/300?random=8">
-          </div>
-        </router-link>
-
-        <router-link to="/DesignPattern">
-          <div class="routerinner">
-            <p>Pattern</p>
-            <img src="https://picsum.photos/300/300?random=9">
-          </div>
-        </router-link>
-
-        <router-link to="/TypeScript">
-          <div class="routerinner">
-            <p>TypeScript</p>
-            <img src="https://picsum.photos/300/300?random=10">
-          </div>
-        </router-link>
-
-        <router-link to="/Vue3">
-          <div class="routerinner">
-            <p>Vue3</p>
-            <img src="https://picsum.photos/300/300?random=11">
-          </div>
-        </router-link>
       </div>
   </div>
 </template>
+<script>
+export default {
+  data(){
+    return {
+      list:[]
+    }
+  },
+  mounted(){
+    this.list = [
+      ['/JavaScript', 'JavaScript'],
+      ['/Vue2', 'Vue2'],
+      ['/React', 'React'],
+      ['/CSS', 'CSS'],
+      ['/DataStructure', 'DataStructure'],
+      ['/LeetCode', 'LeetCode'],
+      ['/NodeAndNpm', 'NodeAndNpm'],
+      ['/Web', 'Web'],
+      ['/D3', 'D3'],
+      ['/DesignPattern', 'DesignPattern'],
+      ['/TypeScript', 'TypeScript'],
+      ['/Vue3', 'Vue3'],
+    ]
+  },
+  methods:{
+    /**
+     * @description 動態產生網址
+     */
+    srcFunc(idx){
+      try{
+        return 'https://picsum.photos/300/300?random='+idx.toString()
+      }catch(e){
+        console.log(e)
+      }
+    }
+  }
+}
+</script>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');

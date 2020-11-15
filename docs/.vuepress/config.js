@@ -52,6 +52,7 @@ module.exports = {
       '/TypeScript/':getSideBar('TypeScript','TypeScript'),
       '/other/':getSideBar('other','other'),
       '/Vue3/':getSideBar('Vue3','Vue3'),
+      '/webpack/':getSideBar('webpack','webpack'),
     },
     lastUpdated: 'Last Updated', // string | boolean
     smoothScroll: true,
