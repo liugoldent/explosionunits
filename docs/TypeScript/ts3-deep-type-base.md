@@ -222,3 +222,81 @@ function increment(input: number = 1, input2: number, input3: number = 3){
     return input + input2 + input3
 }
 ```
+
+## 陣列型別
+### 型別推論
+#### 注意：通常多種型別的內容，稱為異質性陣列。單一種型別，稱為同質性陣列
+```typescript
+// 會推論為 number[]
+const fibSeq = [1, 1, 2, 3, 5, 8]
+
+// 推論為
+// const arr: (string | number | boolean | {
+//     a: number;
+//     b: number;
+// })[]
+const arr = [1, false, 'abc', {}]
+
+
+// 推論為 number[][]
+const multiArray = [
+    [1, 2, 3],
+    [4, 5, 6],
+]
+
+// 推論為 any[]
+const emptyArray = []
+```
+
+### 型別註記
+#### 注意：異質性陣列需要用小括號將型別聯集起來
+```typescript
+const array1: number[] = [1,2,3]
+
+const array2: (number | string)[] = [1, 2, 'abc']
+```
+
+
+## 明文型別
+#### 意思：直接將值表示出來
+### 1. const 的型別推論
+```typescript
+// 推論型別為 123，為明文本身
+const abc = 123
+```
+### 2. let 的型別推論
+```typescript
+// 推論為明文的型別
+let abc = 123
+```
+
+### 互斥聯集
+```typescript
+type NewItemAction = {
+    type: 'NEW_ITEM'
+}
+
+type RemoveItemAction = {
+    type: 'REMOVE_ITEM'
+}
+
+type CompleteItemAction = {
+    type: 'COMPLETE_ITEM'
+}
+
+type UndoneItemAction = {
+    type: 'Undone_ITEM'
+}
+
+type Action = (
+    NewItemAction | 
+    RemoveItemAction |
+    CompleteItemAction |
+    UndoneItemAction
+)
+
+const unKnownType: Action = {
+    // 下面 type 報錯：Type '""' is not assignable to type '"NEW_ITEM" | "REMOVE_ITEM" | "COMPLETE_ITEM" | "Undone_ITEM"'
+    type: '',
+}
+```
