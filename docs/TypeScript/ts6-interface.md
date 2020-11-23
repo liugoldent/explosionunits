@@ -4,7 +4,7 @@
   "lang": "zH",
   "description": "在這篇，我們來看看TypeScript Interface",
   "meta": [{"name":"keywords", "content":"ts, ts interface, interface, 介面"}],
-  "tags": ['JavaScript'],
+  "tags": ['TypeScript'],
   "sidebarDepth": "2"
 }
 ---

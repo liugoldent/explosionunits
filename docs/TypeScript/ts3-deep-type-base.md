@@ -4,7 +4,7 @@
   "lang": "zH",
   "description": "在這篇，我們來看看TypeScript 型別系統概論-深入篇",
   "meta": [{"name":"keywords", "content":"ts, ts type, type, 型別系統"}],
-  "tags": ['JavaScript'],
+  "tags": ['TypeScript'],
   "sidebarDepth": "2"
 }
 ---

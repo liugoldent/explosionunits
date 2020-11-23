@@ -4,7 +4,7 @@
   "lang": "zH",
   "description": "在這篇，我們來看看TypeScript class",
   "meta": [{"name":"keywords", "content":"ts, ts class, class, 類別"}],
-  "tags": ['JavaScript'],
+  "tags": ['TypeScript'],
   "sidebarDepth": "2"
 }
 ---

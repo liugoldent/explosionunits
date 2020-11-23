@@ -34,13 +34,16 @@
 1. 無法預期資料量或是需要頻繁變動資料數量時
 2. 不需要快速找尋資料
 
+### 時間複雜度
+![LinkedList vs Array Time Complexity](https://i.imgur.com/MBGEaCh.jpeg)
+
 ## 串列思考圖
 ![linked-list base](./img/linked-list-base.png)
 
 ## 建立鏈結串列
 ### Node的屬性有
 1. data 資料
-2. next 指向下一個節點
+2. next or pointer 指向下一個節點
 ```javascript
 class LinkedListNode {
 	constructor(ele){
