@@ -30,6 +30,9 @@ module.exports = {
     // 代表說，你輸出的檔案會到哪個位置
     // 下面的意思是說，會輸出到/dist 檔案夾下面
     path: path.resolve(__dirname, './dist'),
+
+    // 用何種方式解析
+    libraryTarget: 'commonjs2',
   }
 }
 ```
