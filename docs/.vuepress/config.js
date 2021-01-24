@@ -20,7 +20,15 @@ module.exports = {
     ['link',{
       rel:'icon',
       href:'/logo.png'
-    }]
+    }],
+    [
+      "script",
+      {
+        "data-ad-client":"ca-pub-6522129511614311",
+        async: true,
+        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+      }
+    ]
   ],
   plugins: [
     [
