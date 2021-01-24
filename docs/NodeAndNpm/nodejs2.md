@@ -257,3 +257,22 @@ app.get('/',(req,res)=>{
     res.status(httpStatus.BAD_GATEWAY).send('進入502 Bad Gateway')
 })
 ```
+
+## 使用JWT
+* JWT：JSON Web Token，通常用來解決身份認證的問題。
+    * JWT是一個長的base64字串，在這字串中分為三個部分別並用點號來分隔
+* 第一個部分：Header：分別儲存型態和加密方法（通常使用HS256雜湊演算法來加密）
+* 第二部分：payload：和Session一樣，可以把自定義的數據存在`payload`裡，例如像用戶資料
+* 第三部分：Signature：作為檢查碼，目的是為了預防前兩部分被中間人偽造修改或利用
+
+### 範例
+```
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJBbmR5MTAiLCJ1c2
+VyX21haWwiOiJhbmR5QGdtYWlsLmNvbSIsInVzZXJfcGFzc3dvcmQiOiJwYXNzd29yZDEwI
+iwiaWF0IjoxNTE1MTQwNDg0fQ.P41UlFdYNIho2EA8T5k9iNK0EMC-Wn06RKk_0FFNjLo
+```
+
+### 流程
+* 使用者登入 > 產生API Token > 進行API路徑存取時先JWT驗證 > 驗證成功才允許訪問該API
+
+

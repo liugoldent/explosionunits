@@ -315,7 +315,187 @@ const mapStateToProps = function(state){
 // connect函數寫法
 connect(mapStateToProps)(Home)
 ```
-
 ### mapStateToProps工作機制
+有點像是：`connect`把整個state傳給了我們的`mapStateToProps`函數，就像是在說告訴我你想從這堆東西裡面拿到什麼。
+`mapStateToProps`返回的物件以props形式傳給了我們的組件。以上面為例就是把`state.count`的值用`count` prop傳遞：物件的屬性
+變成了prop名稱，他們對應的值變成props的值。
+
+### class Component with Redux
+```jsx
+class Counter extends React.Component {
+  increment = () => {
+    this.props.dispatch({ type: "INCREMENT" });
+  };
+  
+  decrement = () => {
+    this.props.dispatch({ type: "DECREMENT" });
+  };
+  render() {
+    return (
+      <div className="counter">
+        <h2>Counter</h2>
+        <div>
+          <button onClick={this.decrement}>-</button>
+          <span className="count">{
+            // 把 state:
+            //// this.state.count
+            // 替换成:
+            this.props.count
+          }</span>
+          <button onClick={this.increment}>+</button>
+        </div>
+      </div>
+    );
+  }
+}
+// 添加这个函数:
+function mapStateToProps(state) {
+  return {
+    count: state.count
+  };
+}
+export default connect(mapStateToProps)(Counter);
+```
+
+## Action 常量
+### 一個檔案 
+建議把action常量放在一個檔案中。例如`action.js`
+```jsx
+export const INCREMENT = "INCREMENT";
+export const DECREMENT = "DECREMENT";
+```
+### 再引入actions檔案
+```jsx
+import React from "react";
+import { INCREMENT, DECREMENT } from './actions';
+
+class Counter extends React.Component {
+  state = { count: 0 };
+
+  increment = () => {
+    this.props.dispatch({ type: INCREMENT });
+  };
+
+  decrement = () => {
+    this.props.dispatch({ type: DECREMENT });
+  };
+
+  render() {
+    ...
+  }
+}
+```
+
+### actions 生成器
+主要就是使用function return 出actions常量
+```jsx
+export const INCREMENT = "INCREMENT";
+export const DECREMENT = "DECREMENT";
+
+// 通常function是使用小寫作命名，但是action是用大寫
+export function increment() {
+  return { type: INCREMENT };
+}
+
+export const decrement = () => ({ type: DECREMENT });
+```
+
+### actions 生成器使用
+```jsx
+import React from "react";
+import { increment, decrement } from './actions';
+
+class Counter extends React.Component {
+  state = { count: 0 };
+
+  increment = () => {
+    this.props.dispatch(increment()); // << 在这使用
+  };
+
+  decrement = () => {
+    this.props.dispatch(decrement());
+  };
+
+  render() {
+    ...
+  }
+}
+```
+
+## mapDispatchToProps
+當你厭煩了寫`this.props.dispatch`，你將會想要透過舒服的方式寫，那就使用`mapDispatchToProps`
+```jsx
+import React from 'react';
+import { connect } from 'react-redux';
+import { increment, decrement } from './actions';
+
+class Counter extends React.Component {
+  increment = () => {
+    this.props.increment();
+  }
+
+  decrement = () => {
+    this.props.decrement();
+  }
+
+  render() {
+    // ...
+  }
+}
+
+function mapStateToProps(state) {
+  return {
+    count: state.count
+  };
+}
+
+// 在這邊我們用一個物件包起來
+const mapDispatchToProps = {
+  increment,
+  decrement
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Counter);
+```
+
+## 透過thunk的非同步action
+### 為何使用
+因為actions主要處理同步事件
+### 安裝
+```npm
+npm i --save redux-thunk
+```
+### 使用
+1. 引入thunk
+2. 通過redux的applyMiddleware
+:::tip
+必須確保thunk 包裝在applyMiddleware調用裡面，否則不會生效
+:::
+```jsx
+import thunk from 'redux-thunk'
+import { createStore, applyMiddlewate } from 'redux'
+
+function reducer(state, action){
+
+}
+
+const store = createStore(
+    reducer,
+    applyMiddlewate(thunk)
+)
+```
+
+## dispatch 給 action 來拿到數據吧
+### 建議位置
+1. componentDidMount
+2. useEffect Hook
+### 建議命名
+通常會使用名稱：`BEGIN`、`SUCCESS`、`FAILURE`。只是慣例。
+例如
+1. 設置`loading`標誌為`true`以響應BEGIN操作
+2. 在SUCCESS or FAILURE 之後設置 `false`
+調用API之前 dispatch BEGIN action。成功後dispatch SUCCESS數據。失敗則dispatch訊息
+
+
 ## 參考
 * [reducer](https://juejin.cn/post/6844903815594901512#heading-11)

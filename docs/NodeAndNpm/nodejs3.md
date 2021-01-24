@@ -15,6 +15,7 @@ import article from './article.route';
 
 router.use('/article', article);
 ```
+
 ## 新增（Article）
 > router.js > controller.js > module.js（由controller.js傳進給module）
 
@@ -133,7 +134,6 @@ const selectArticle = () => {
   });
 };
 ```
-
 
 ## 修改
 因為在修改上，你需要給一個條件去找出被修改的物件，所以需要傳參數給node
@@ -278,3 +278,46 @@ router.route('/:article_id')
 
 export default router;
 ```
+
+## JWT
+### JWT 驗證身份
+#### 修改user.module.js
+建立好使用者資料，即可使用`jwt.sign()`取得token。
+該方法有兩個參數，一個是`Payload+狀態`，另一個是`expiresln`、`notBefore`、`audience`、`subject`、`issuer`
+```javascript
+const payload = {
+    user_id: result[0].user_id,
+    user_name: result[0].user_name,
+    user_mail: result[0].user_mail
+}
+const token = jwt.sign({
+    payload,
+    exp: Math.floor(Data.now()/1000 + (60*15))
+},'my_sercret_key')
+```
+
+### JWT 存取API內容
+我們使用`jwt.verify()`方法來做JWT驗證，此方法中有三個參數
+1. 第一個參數：API token：其變數是由`article.controller.js`傳過來的
+2. 第二個參數：Signature：簽署密碼：記得要與當時登入時所簽署的密碼一樣，否則會出問題
+3. 第三個參數：callback function：得到回傳結果
+
+
+### JWT 和 Bearer Token的關係
+#### 驗證格式
+* Basic (RFC 7617)
+* Bearer (RFC 6750)
+* Digest (RFC 7616)
+* HOBA (RFC 7486)
+* Mutual
+* AWS4-HMAC-SHA256
+
+### 客戶端向後端出示API Token的方式
+1. 放在HTTP Header內
+2. 放在Request Body內
+3. 放在URL裡
+
+### Authenticate API Error 錯誤訊息
+1. 400：遇到無法解讀Request 的情況
+2. 401：API Token 過期、無法解讀 or Access Token 不合法
+3. 403：尚未提供Bearer Token ，即server 找沒有資料
