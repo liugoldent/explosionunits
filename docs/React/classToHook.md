@@ -119,6 +119,5 @@ export default Toggle;
 ```jsx
 dispatch({type: TOGGLE, payload: 'My payload'})
 ```
-
 ## 參考
 * [[译]如何结合React Hooks来使用Redux](https://juejin.cn/post/6844903955739197447)
