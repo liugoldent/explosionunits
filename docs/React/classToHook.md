@@ -115,7 +115,6 @@ const Toggle = () => {
 
 export default Toggle;
 ```
-
 ## 傳遞payload給dispatcher
 ```jsx
 dispatch({type: TOGGLE, payload: 'My payload'})
